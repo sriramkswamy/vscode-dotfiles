@@ -34,7 +34,6 @@ code --install-extension WallabyJs.quokka-vscode
 code --install-extension ms-python.python
 code --install-extension esbenp.prettier-vscode
 code --install-extension ms-vscode.PowerShell
-code --install-extension felixfbecker.php-pack
 code --install-extension christian-kohler.path-intellisense
 code --install-extension IBM.output-colorizer
 code --install-extension ms-vscode.node-debug2
