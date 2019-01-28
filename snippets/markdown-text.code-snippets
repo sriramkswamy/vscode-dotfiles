@@ -1,0 +1,220 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// Markdown and plain text
+
+    "parenthesis": {
+        "prefix": "pr",
+        "scope": "markdown, plaintext",
+        "body": [
+            "($1) $2"
+		],
+		"description": "parenthesis"
+    },
+
+    "braces": {
+        "prefix": "br",
+        "scope": "markdown, plaintext",
+        "body": [
+            "{$1}$2"
+		],
+		"description": "braces"
+    },
+
+    "square brackets": {
+        "prefix": "qr",
+        "scope": "markdown, plaintext",
+        "body": [
+            "[$1]$2"
+		],
+		"description": "square brackets"
+    },
+
+    "heading 1": {
+        "prefix": "h1",
+        "scope": "markdown, plaintext",
+        "body": [
+            "# $1"
+		],
+		"description": "heading 1"
+    },
+
+    "heading 2": {
+        "prefix": "h2",
+        "scope": "markdown, plaintext",
+        "body": [
+            "## $1"
+		],
+		"description": "heading 2"
+    },
+
+    "heading 3": {
+        "prefix": "h3",
+        "scope": "markdown, plaintext",
+        "body": [
+            "### $1"
+		],
+		"description": "heading 3"
+    },
+
+    "heading 4": {
+        "prefix": "h4",
+        "scope": "markdown, plaintext",
+        "body": [
+            "#### $1"
+		],
+		"description": "heading 4"
+    },
+
+    "heading 5": {
+        "prefix": "h5",
+        "scope": "markdown, plaintext",
+        "body": [
+            "##### $1"
+		],
+		"description": "heading 5"
+    },
+
+    "heading 6": {
+        "prefix": "h6",
+        "scope": "markdown, plaintext",
+        "body": [
+            "###### $1"
+		],
+		"description": "heading 6"
+    },
+
+    "block quote": {
+        "prefix": "qu",
+        "scope": "markdown, plaintext",
+        "body": [
+            "> $1"
+		],
+		"description": "block quote"
+    },
+
+    "unordered list": {
+        "prefix": "ul",
+        "scope": "markdown, plaintext",
+        "body": [
+            "* $1"
+		],
+		"description": "unordered list"
+    },
+
+    "ordered list": {
+        "prefix": "ol",
+        "scope": "markdown, plaintext",
+        "body": [
+            "${1:1}. $2"
+		],
+		"description": "ordered list"
+    },
+
+    "horizontal rule": {
+        "prefix": "hr",
+        "scope": "markdown, plaintext",
+        "body": [
+            "***",
+            "$1"
+		],
+		"description": "horizontal rule"
+    },
+
+    "link": {
+        "prefix": "lk",
+        "scope": "markdown, plaintext",
+        "body": [
+            "[${1:description}](${2:url})$3"
+		],
+		"description": "link"
+    },
+
+    "reference link": {
+        "prefix": "rlk",
+        "scope": "markdown, plaintext",
+        "body": [
+            "[${1:description}][${2:ref_id}]$3"
+		],
+		"description": "reference link"
+    },
+
+    "id for the reference": {
+        "prefix": "idref",
+        "scope": "markdown, plaintext",
+        "body": [
+            "[id]: ${1:url}"
+		],
+		"description": "id for the reference"
+    },
+
+    "emphasis": {
+        "prefix": "em",
+        "scope": "markdown, plaintext",
+        "body": [
+            "*$1* $2"
+		],
+		"description": "emphasis"
+    },
+
+    "strong": {
+        "prefix": "str",
+        "scope": "markdown, plaintext",
+        "body": [
+            "**$1** $2"
+		],
+		"description": "strong"
+    },
+
+    "backtick code": {
+        "prefix": "code",
+        "scope": "markdown, plaintext",
+        "body": [
+            "``$1`` $2"
+		],
+		"description": "backtick code"
+    },
+
+    "image inline": {
+        "prefix": "img",
+        "scope": "markdown, plaintext",
+        "body": [
+            "![${1:alt_text}](${2:url/path}) $3"
+		],
+		"description": "image inline"
+    },
+
+    "reference image": {
+        "prefix": "refi",
+        "scope": "markdown, plaintext",
+        "body": [
+            "[${1:alt_text}][${2:ref_id}]$3"
+		],
+		"description": "reference image"
+    },
+
+    "automatic line": {
+        "prefix": "alk",
+        "scope": "markdown, plaintext",
+        "body": [
+            "<${1:url}> $2"
+		],
+		"description": "automatic line"
+	}
+
+}

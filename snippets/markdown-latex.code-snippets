@@ -1,0 +1,1397 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"xi": {
+		"prefix": "xii",
+		"scope": "markdown, latex",
+		"body": [
+			"\\xi",
+		],
+		"description": "xi"
+	},
+
+	"rho": {
+		"prefix": "ro",
+		"scope": "markdown, latex",
+		"body": [
+			"\\rho",
+		],
+		"description": "rho"
+	},
+
+	"sigma": {
+		"prefix": "sig",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sigma",
+		],
+		"description": "sigma"
+	},
+
+	"Sigma": {
+		"prefix": "Sig",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Sigma",
+		],
+		"description": "Sigma"
+	},
+
+	"alpha": {
+		"prefix": "alp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\alpha",
+		],
+		"description": "alpha"
+	},
+
+	"beta": {
+		"prefix": "bet",
+		"scope": "markdown, latex",
+		"body": [
+			"\\beta",
+		],
+		"description": "beta"
+	},
+
+	"gamma": {
+		"prefix": "gam",
+		"scope": "markdown, latex",
+		"body": [
+			"\\gamma",
+		],
+		"description": "gamma"
+	},
+
+	"chi": {
+		"prefix": "ch",
+		"scope": "markdown, latex",
+		"body": [
+			"\\chi",
+		],
+		"description": "chi"
+	},
+
+	"nu": {
+		"prefix": "nuu",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nu",
+		],
+		"description": "nu"
+	},
+
+	"laplacian": {
+		"prefix": "lap",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nabla^2",
+		],
+		"description": "laplacian"
+	},
+
+	"lambda": {
+		"prefix": "lam",
+		"scope": "markdown, latex",
+		"body": [
+			"\\lambda",
+		],
+		"description": "lambda"
+	},
+
+	"mu": {
+		"prefix": "muu",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mu",
+		],
+		"description": "mu"
+	},
+
+	"iota": {
+		"prefix": "io",
+		"scope": "markdown, latex",
+		"body": [
+			"\\iota",
+		],
+		"description": "iota"
+	},
+
+	"kappa": {
+		"prefix": "ka",
+		"scope": "markdown, latex",
+		"body": [
+			"\\kappa",
+		],
+		"description": "kappa"
+	},
+
+	"for all": {
+		"prefix": "fora",
+		"scope": "markdown, latex",
+		"body": [
+			"\\forall",
+		],
+		"description": "for all"
+	},
+
+	"epsilon": {
+		"prefix": "ep",
+		"scope": "markdown, latex",
+		"body": [
+			"\\epsilon",
+		],
+		"description": "epsilon"
+	},
+
+	"tau": {
+		"prefix": "ta",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tau",
+		],
+		"description": "tau"
+	},
+
+	"Theta": {
+		"prefix": "Tha",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Theta",
+		],
+		"description": "Theta"
+	},
+
+	"theta": {
+		"prefix": "tha",
+		"scope": "markdown, latex",
+		"body": [
+			"\\theta",
+		],
+		"description": "theta"
+	},
+
+	"delta": {
+		"prefix": "de",
+		"scope": "markdown, latex",
+		"body": [
+			"\\delta",
+		],
+		"description": "delta"
+	},
+
+	"Delta": {
+		"prefix": "De",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Delta",
+		],
+		"description": "Delta"
+	},
+
+	"Epsilon": {
+		"prefix": "Ep",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Epsilon",
+		],
+		"description": "Epsilon"
+	},
+
+	"psi": {
+		"prefix": "ps",
+		"scope": "markdown, latex",
+		"body": [
+			"\\psi",
+		],
+		"description": "psi"
+	},
+
+	"PSI": {
+		"prefix": "Ps",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Psi",
+		],
+		"description": "PSI"
+	},
+
+	"Phi": {
+		"prefix": "Ph",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Phi",
+		],
+		"description": "Phi"
+	},
+
+	"phi": {
+		"prefix": "ph",
+		"scope": "markdown, latex",
+		"body": [
+			"\\phi",
+		],
+		"description": "phi"
+	},
+
+	"nabla": {
+		"prefix": "nab",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nabla",
+		],
+		"description": "nabla"
+	},
+
+	"omega": {
+		"prefix": "om",
+		"scope": "markdown, latex",
+		"body": [
+			"\\omega",
+		],
+		"description": "omega"
+	},
+
+	"Omega": {
+		"prefix": "Om",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Omega",
+		],
+		"description": "Omega"
+	},
+
+	"Tau": {
+		"prefix": "Ta",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathrm{T}",
+		],
+		"description": "Tau"
+	},
+
+	"Gamma": {
+		"prefix": "Gam",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Gamma",
+		],
+		"description": "Gamma"
+	},
+
+	"gradient": {
+		"prefix": "grad",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nabla {$1}$0",
+		],
+		"description": "gradient"
+	},
+
+	"divergence": {
+		"prefix": "div",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nabla \\cdot {$1}$0",
+		],
+		"description": "divergence"
+	},
+
+	"curl": {
+		"prefix": "cu",
+		"scope": "markdown, latex",
+		"body": [
+			"\\nabla \\times {$1}$0",
+		],
+		"description": "curl"
+	},
+
+	"times": {
+		"prefix": "xs",
+		"scope": "markdown, latex",
+		"body": [
+			"\\times $0",
+		],
+		"description": "times"
+	},
+
+	"infinity": {
+		"prefix": "inf",
+		"scope": "markdown, latex",
+		"body": [
+			"\\infty",
+		],
+		"description": "infinity"
+	},
+
+	"partial": {
+		"prefix": "par",
+		"scope": "markdown, latex",
+		"body": [
+			"\\partial{$1}$0",
+		],
+		"description": "partial"
+	},
+
+	"partial power": {
+		"prefix": "parp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\partial^{${1:2}}{$2}$0",
+		],
+		"description": "partial power"
+	},
+
+	"differential": {
+		"prefix": "dif",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathrm{d}{$1}$0",
+		],
+		"description": "differential"
+	},
+
+	"Differential": {
+		"prefix": "Dif",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathrm{D}{$1}$0",
+		],
+		"description": "Differential"
+	},
+
+	"Differential power": {
+		"prefix": "Difp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathrm{D}^2{$1}$0",
+		],
+		"description": "Differential power"
+	},
+
+	"differential power": {
+		"prefix": "difp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathrm{d}^2{$1}$0",
+		],
+		"description": "differential power"
+	},
+
+	"fraction": {
+		"prefix": "fr",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{$1}{$2}$0",
+		],
+		"description": "fraction"
+	},
+
+	"typewriter": {
+		"prefix": "tt",
+		"scope": "markdown, latex",
+		"body": [
+			"\\texttt{$1}$0",
+		],
+		"description": "typewriter"
+	},
+
+	"underline": {
+		"prefix": "un",
+		"scope": "markdown, latex",
+		"body": [
+			"\\underline{$1}$0",
+		],
+		"description": "underline"
+	},
+
+	"limit": {
+		"prefix": "lim",
+		"scope": "markdown, latex",
+		"body": [
+			"\\lim_{{$1} \\to {$2}} {$3} $0",
+		],
+		"description": "limit"
+	},
+
+	"integral": {
+		"prefix": "int",
+		"scope": "markdown, latex",
+		"body": [
+			"\\int_{$1}^{$2} \\! {$3} \\, \\mathrm{d}{$4} $0",
+		],
+		"description": "integral"
+	},
+
+	"double integral": {
+		"prefix": "doin",
+		"scope": "markdown, latex",
+		"body": [
+			"\\iint\\limits_{$1} \\! {$2} \\, \\mathrm{d}{$3} $0",
+		],
+		"description": "double integral"
+	},
+
+	"triple integral": {
+		"prefix": "triin",
+		"scope": "markdown, latex",
+		"body": [
+			"\\iiint\\limits_{$1} \\! {$2} \\, \\mathrm{d}{$3} $0",
+		],
+		"description": "triple integral"
+	},
+
+	"cyclic integral": {
+		"prefix": "cycin",
+		"scope": "markdown, latex",
+		"body": [
+			"\\oint_{$1} \\! {$2} \\, \\mathrm{d} {$3} $0",
+		],
+		"description": "cyclic integral"
+	},
+
+	"summation": {
+		"prefix": "sum",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sum\\limits_{$1}^{$2} {$3} $0",
+		],
+		"description": "summation"
+	},
+
+	"product": {
+		"prefix": "prod",
+		"scope": "markdown, latex",
+		"body": [
+			"\\prod\\limits_{$1}^{$2} {$3} $0",
+		],
+		"description": "product"
+	},
+
+	"vector": {
+		"prefix": "vec",
+		"scope": "markdown, latex",
+		"body": [
+			"\\vec{$1}$0",
+		],
+		"description": "vector"
+	},
+
+	"dot above the expression": {
+		"prefix": "dot",
+		"scope": "markdown, latex",
+		"body": [
+			"\\dot{$1}$0",
+		],
+		"description": "dot above the expression"
+	},
+
+	"dot product": {
+		"prefix": ".",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cdot $0",
+		],
+		"description": "dot product"
+	},
+
+	"cdots": {
+		"prefix": "cs",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cdots $0",
+		],
+		"description": "cdots"
+	},
+
+	"dash": {
+		"prefix": "-",
+		"scope": "markdown, latex",
+		"body": [
+			"--- $0",
+		],
+		"description": "dash"
+	},
+
+	"abs": {
+		"prefix": "ab",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left| $1 \\right| $0",
+		],
+		"description": "abs"
+	},
+
+	"double right harpoon for tensor": {
+		"prefix": "tens",
+		"scope": "markdown, latex",
+		"body": [
+			"\\stackrel{\\leftrightarrow}{$1}$0",
+		],
+		"description": "double right harpoon for tensor"
+	},
+
+	"widehat": {
+		"prefix": "wh",
+		"scope": "markdown, latex",
+		"body": [
+			"\\widehat{$1}$0",
+		],
+		"description": "widehat"
+	},
+
+	"hat": {
+		"prefix": "hat",
+		"scope": "markdown, latex",
+		"body": [
+			"\\hat{$1}$0",
+		],
+		"description": "hat"
+	},
+
+	"not equal to": {
+		"prefix": "ne",
+		"scope": "markdown, latex",
+		"body": [
+			"\\neq $0",
+		],
+		"description": "not equal to"
+	},
+
+	"partial fraction": {
+		"prefix": "pf",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\partial{$1}}{\\partial{$2}}$0",
+		],
+		"description": "partial fraction"
+	},
+
+	"differential fraction": {
+		"prefix": "df",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\mathrm{d}{$1}}{\\mathrm{d}{$2}}$0",
+		],
+		"description": "differential fraction"
+	},
+
+	"Differential Fraction": {
+		"prefix": "DF",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\mathrm{D}{$1}}{\\mathrm{D}{$2}}$0",
+		],
+		"description": "Differential Fraction"
+	},
+
+	"double partial fraction": {
+		"prefix": "pff",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\partial^2 {$1}}{\\partial {$2}^2}$0",
+		],
+		"description": "double partial fraction"
+	},
+
+	"double differential fraction": {
+		"prefix": "dff",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\mathrm{d}^2{$1}}{\\mathrm{d}{$2}^2}$0",
+		],
+		"description": "double differential fraction"
+	},
+
+	"double differential capital fraction": {
+		"prefix": "DFF",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{\\mathrm{D}^2{$1}}{\\mathrm{D}{$2}^2}$0",
+		],
+		"description": "double differential fraction"
+	},
+
+	"ldots": {
+		"prefix": "ls",
+		"scope": "markdown, latex",
+		"body": [
+			"\\ldots $0",
+		],
+		"description": "ldots"
+	},
+
+	"kroenecker delta": {
+		"prefix": "kd",
+		"scope": "markdown, latex",
+		"body": [
+			"\\delta_{${1:ij}} $0",
+		],
+		"description": "kroenecker delta"
+	},
+
+	"alternating unit tensor": {
+		"prefix": "aut",
+		"scope": "markdown, latex",
+		"body": [
+			"\\epsilon_{${1:ijk}} $0",
+		],
+		"description": "alternating unit tensor"
+	},
+
+	"eta": {
+		"prefix": "etaa",
+		"scope": "markdown, latex",
+		"body": [
+			"\\eta",
+		],
+		"description": "eta"
+	},
+
+	"equivalent symbol": {
+		"prefix": "sameas",
+		"scope": "markdown, latex",
+		"body": [
+			"\\equiv $0",
+		],
+		"description": "equivalent symbol"
+	},
+
+	"evaluated at": {
+		"prefix": "eval",
+		"scope": "markdown, latex",
+		"body": [
+			"{\\biggr \\rvert}_{$1}^{$2} $0",
+		],
+		"description": "evaluated at"
+	},
+
+	"scaled brackets": {
+		"prefix": "ssq",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left[ $1 \\right]$0",
+		],
+		"description": "scaled brackets"
+	},
+
+	"scaled paranthesis": {
+		"prefix": "ssp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left( $1 \\right)$0",
+		],
+		"description": "scaled paranthesis"
+	},
+
+	"scaled curly brackets": {
+		"prefix": "ssb",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left\\{ $1 \\right\\}$0",
+		],
+		"description": "scaled curly brackets"
+	},
+
+	"scaled angles": {
+		"prefix": "ssa",
+		"scope": "markdown, latex",
+		"body": [
+			"\\langle $1 \\rangle$0",
+		],
+		"description": "scaled angles"
+	},
+
+	"scaled double bar": {
+		"prefix": "ssd",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left| $1 \\right|$0",
+		],
+		"description": "scaled double bar"
+	},
+
+	"square root": {
+		"prefix": "rt",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sqrt{$1}",
+		],
+		"description": "square root"
+	},
+
+	"cosine": {
+		"prefix": "cos",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cos{$1}",
+		],
+		"description": "cosine"
+	},
+
+	"sine": {
+		"prefix": "sin",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sin{$1}",
+		],
+		"description": "sine"
+	},
+
+	"tangent": {
+		"prefix": "tan",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tan{$1}",
+		],
+		"description": "tangent"
+	},
+
+	"hyperbolic cosine": {
+		"prefix": "cosh",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cosh{$1}",
+		],
+		"description": "hyperbolic cosine"
+	},
+
+	"hyperbolic sine": {
+		"prefix": "sinh",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sinh{$1}",
+		],
+		"description": "hyperbolic sine"
+	},
+
+	"hyperbolic tangent": {
+		"prefix": "tanh",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tanh{$1}",
+		],
+		"description": "hyperbolic tangent"
+	},
+
+	"pi": {
+		"prefix": "pii",
+		"scope": "markdown, latex",
+		"body": [
+			"\\pi",
+		],
+		"description": "pi"
+	},
+
+	"PI": {
+		"prefix": "Pii",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Pi",
+		],
+		"description": "PI"
+	},
+
+	"real set": {
+		"prefix": "re",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Re^{$1}$0",
+		],
+		"description": "real set"
+	},
+
+	"prime": {
+		"prefix": "pri",
+		"scope": "markdown, latex",
+		"body": [
+			"\\prime",
+		],
+		"description": "prime"
+	},
+
+	"prime power": {
+		"prefix": "pr",
+		"scope": "markdown, latex",
+		"body": [
+			"^{\\prime}",
+		],
+		"description": "prime power"
+	},
+
+	"sin inverse": {
+		"prefix": "sini",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sin^{-1}{$1}",
+		],
+		"description": "sin inverse"
+	},
+
+	"cos inverse": {
+		"prefix": "cosi",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cos^{-1}{$1}",
+		],
+		"description": "cos inverse"
+	},
+
+	"tan inverse": {
+		"prefix": "tani",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tan^{-1}{$1}",
+		],
+		"description": "tan inverse"
+	},
+
+	"hyperbolic sin inverse": {
+		"prefix": "sinhi",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sinh^{-1}{$1}",
+		],
+		"description": "hyperbolic sin inverse"
+	},
+
+	"hyperbolic cos inverse": {
+		"prefix": "coshi",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cosh^{-1}{$1}",
+		],
+		"description": "hyperbolic cos inverse"
+	},
+
+	"hyperbolic tan inverse": {
+		"prefix": "tanhi",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tanh^{-1}{$1}",
+		],
+		"description": "hyperbolic tan inverse"
+	},
+
+	"newline": {
+		"prefix": "newl",
+		"scope": "markdown, latex",
+		"body": [
+			"\\newline",
+			"$0",
+		],
+		"description": "newline"
+	},
+
+	"approximately symbol": {
+		"prefix": "app",
+		"scope": "markdown, latex",
+		"body": [
+			"\\approx $1",
+		],
+		"description": "approximately symbol"
+	},
+
+	"proportional symbol": {
+		"prefix": "prop",
+		"scope": "markdown, latex",
+		"body": [
+			"\\propto",
+		],
+		"description": "proportional symbol"
+	},
+
+	"similar symbol": {
+		"prefix": "sim",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sim",
+		],
+		"description": "similar symbol"
+	},
+
+	"add column": {
+		"prefix": "acol",
+		"scope": "markdown, latex",
+		"body": [
+			"${1:L}{${2:4}cm}${3:|}$0",
+		],
+		"description": "add column"
+	},
+
+	"inline math": {
+		"prefix": "mi",
+		"scope": "markdown, latex",
+		"body": [
+			"$$1$ $0",
+		],
+		"description": "inline math"
+	},
+
+	"deviatoric": {
+		"prefix": "dev",
+		"scope": "markdown, latex",
+		"body": [
+			"d_{${1:ij}}$0",
+		],
+		"description": "deviatoric"
+	},
+
+	"fourth order tensor": {
+		"prefix": "fot",
+		"scope": "markdown, latex",
+		"body": [
+			"B_{ijkl}$0",
+		],
+		"description": "fourth order tensor"
+	},
+
+	"bar/average": {
+		"prefix": "bar",
+		"scope": "markdown, latex",
+		"body": [
+			"\\bar{$1}$0",
+		],
+		"description": "bar/average"
+	},
+
+	"piecewise function definition": {
+		"prefix": "pwise",
+		"scope": "markdown, latex",
+		"body": [
+			"\\[",
+			"$1 =",
+			"\begin{cases}",
+			"\\hfill $2 \\hfill & \\text{, \\hspace{0.25cm} $3} \\\\",
+			"\\hfill $4 \\hfill & \\text{, \\hspace{0.25cm} $5} \\\\",
+			"\\end{cases}",
+			"\\]",
+			"$0",
+		],
+		"description": "piecewise function definition"
+	},
+
+	"cos square": {
+		"prefix": "cos2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cos^2{$1}",
+		],
+		"description": "cos square"
+	},
+
+	"sin square": {
+		"prefix": "sin2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sin^2{$1}",
+		],
+		"description": "sin square"
+	},
+
+	"tan square": {
+		"prefix": "tan2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tan^2{$1}",
+		],
+		"description": "tan square"
+	},
+
+	"hyperbolic cos square": {
+		"prefix": "cosh2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cosh^2{$1}",
+		],
+		"description": "hyperbolic cos square"
+	},
+
+	"hyperbolic sin square": {
+		"prefix": "sinh2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\sinh^2{$1}",
+		],
+		"description": "hyperbolic sin square"
+	},
+
+	"hyperbolic tan square": {
+		"prefix": "tanh2",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tanh^2{$1}",
+		],
+		"description": "hyperbolic tan square"
+	},
+
+	"Friction factor": {
+		"prefix": "ff",
+		"scope": "markdown, latex",
+		"body": [
+			"\\frac{4 f l^*_{$1}}{D_H}",
+		],
+		"description": "Friction factor"
+	},
+
+	"if and only if": {
+		"prefix": "iff",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Leftrightarrow $0",
+		],
+		"description": "if and only if"
+	},
+
+	"Chance constrained cost function": {
+		"prefix": "cccost",
+		"scope": "markdown, latex",
+		"body": [
+			"\\begin{aligned}",
+			"& \\underset{$1}{\\text{minimize}}",
+			"& & $2 \\\\",
+			"& \\text{subject to}",
+			"& & $3, ${4:\\;} $5, \\\\",
+			"&&& $6.",
+			"\\end{aligned}",
+		],
+		"description": "Chance constrained cost function"
+	},
+
+	"aligned equation": {
+		"prefix": "ali",
+		"scope": "markdown, latex",
+		"body": [
+			"\\begin{aligned}",
+			"${1:LHS} & = ${2:RHS} \\\\$0",
+			"\\end{aligned}",
+		],
+		"description": "aligned equation"
+	},
+
+	"new alighned line": {
+		"prefix": "nal",
+		"scope": "markdown, latex",
+		"body": [
+			"& = ${1:RHS} \\\\$0",
+		],
+		"description": "new alighned line"
+	},
+
+	"probability": {
+		"prefix": "prob",
+		"scope": "markdown, latex",
+		"body": [
+			"Prob{\\left[ $1 \\right]} ${2:\\leq} $3",
+		],
+		"description": "probability"
+	},
+
+	"less than or equal to": {
+		"prefix": "leq",
+		"scope": "markdown, latex",
+		"body": [
+			"\\leq $0",
+		],
+		"description": "less than or equal to"
+	},
+
+	"greater than or equal to": {
+		"prefix": "geq",
+		"scope": "markdown, latex",
+		"body": [
+			"\\geq $0",
+		],
+		"description": "greater than or equal to"
+	},
+
+	"belongs to": {
+		"prefix": "in",
+		"scope": "markdown, latex",
+		"body": [
+			"\\in $0",
+		],
+		"description": "belongs to"
+	},
+
+	"multi part function": {
+		"prefix": "multif",
+		"scope": "markdown, latex",
+		"body": [
+			"\\begin{equation*}",
+			"$1 =",
+			"\\left\\{",
+			"\\begin{array}{ll}",
+			"x  & \\mbox{if } x \\geq 0 \\",
+			"-x & \\mbox{if } x < 0",
+			"\\end{array}",
+			"\\right}",
+			"=",
+			"\\end{equation*}",
+		],
+		"description": "multi part function"
+	},
+
+	"union symbol": {
+		"prefix": "union",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cup $0",
+		],
+		"description": "union symbol"
+	},
+
+	"intersection symbol": {
+		"prefix": "inter",
+		"scope": "markdown, latex",
+		"body": [
+			"\\cap $0",
+		],
+		"description": "intersection symbol"
+	},
+
+	"Left arrow": {
+		"prefix": "larrow",
+		"scope": "markdown, latex",
+		"body": [
+			"\\leftarrow $0",
+		],
+		"description": "Left arrow"
+	},
+
+	"Right arrow": {
+		"prefix": "rarrow",
+		"scope": "markdown, latex",
+		"body": [
+			"\\rightarrow $0",
+		],
+		"description": "Right arrow"
+	},
+
+	"tilde": {
+		"prefix": "til",
+		"scope": "markdown, latex",
+		"body": [
+			"\\tilde{$1}$0",
+		],
+		"description": "tilde"
+	},
+
+	"double dot": {
+		"prefix": "ddot",
+		"scope": "markdown, latex",
+		"body": [
+			"\\ddot{$1}$0",
+		],
+		"description": "double dot"
+	},
+
+	"defined as - triangle over equals": {
+		"prefix": "def",
+		"scope": "markdown, latex",
+		"body": [
+			"\\triangleq",
+		],
+		"description": "defined as - triangle over equals"
+	},
+
+	"matrix": {
+		"prefix": "mat",
+		"scope": "markdown, latex",
+		"body": [
+			"\\begin{bmatrix}",
+			"$1",
+			"\\end{bmatrix}",
+			"$0",
+		],
+		"description": "matrix"
+	},
+
+	"mathcal": {
+		"prefix": "cal",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathcal{$1}$0",
+		],
+		"description": "mathcal"
+	},
+
+	"mathbf": {
+		"prefix": "mf",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathbf{$1}$0",
+		],
+		"description": "mathbf"
+	},
+
+	"mathbb": {
+		"prefix": "bb",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathbb{$1}$0",
+		],
+		"description": "mathbb"
+	},
+
+	"boldsymbol": {
+		"prefix": "bo",
+		"scope": "markdown, latex",
+		"body": [
+			"\\boldsymbol{$1}$0",
+		],
+		"description": "boldsymbol"
+	},
+
+	"bigotimes": {
+		"prefix": "bigo",
+		"scope": "markdown, latex",
+		"body": [
+			"\\bigotimes\\limits_{$1}^{$2} {$3} $0",
+		],
+		"description": "bigotimes"
+	},
+
+	"otimes": {
+		"prefix": "oti",
+		"scope": "markdown, latex",
+		"body": [
+			"\\otimes $0",
+		],
+		"description": "otimes"
+	},
+
+	"superscript": {
+		"prefix": "up",
+		"scope": "markdown, latex",
+		"body": [
+			"^{$1}$0",
+		],
+		"description": "superscript"
+	},
+
+	"subscript": {
+		"prefix": "dd",
+		"scope": "markdown, latex",
+		"body": [
+			"_{$1}$0",
+		],
+		"description": "subscript"
+	},
+
+	"both super and sub scripts": {
+		"prefix": "du",
+		"scope": "markdown, latex",
+		"body": [
+			"_{$1}^{$2}$0",
+		],
+		"description": "both super and sub scripts"
+	},
+
+	"text": {
+		"prefix": "tx",
+		"scope": "markdown, latex",
+		"body": [
+			"\\text{$1}$0",
+		],
+		"description": "text"
+	},
+
+	"circle": {
+		"prefix": "cc",
+		"scope": "markdown, latex",
+		"body": [
+			"\\circ",
+		],
+		"description": "circle"
+	},
+
+	"euler script": {
+		"prefix": "eul",
+		"scope": "markdown, latex",
+		"body": [
+			"\\mathscr{$1}$0",
+		],
+		"description": "euler script"
+	},
+
+	"star power": {
+		"prefix": "*",
+		"scope": "markdown, latex",
+		"body": [
+			"^{*}",
+		],
+		"description": "star power"
+	},
+
+	"exponential": {
+		"prefix": "exp",
+		"scope": "markdown, latex",
+		"body": [
+			"\\exp{$1}$0",
+		],
+		"description": "exponential"
+	},
+
+	"maximum": {
+		"prefix": "max",
+		"scope": "markdown, latex",
+		"body": [
+			"\\max",
+		],
+		"description": "maximum"
+	},
+
+	"Prandtl number": {
+		"prefix": "Pr",
+		"scope": "markdown, latex",
+		"body": [
+			"\\Pr $0",
+		],
+		"description": "Prandtl number"
+	},
+
+	"natural log": {
+		"prefix": "ln",
+		"scope": "markdown, latex",
+		"body": [
+			"\\ln{$1}$0",
+		],
+		"description": "natural log"
+	},
+
+	"Reynolds number": {
+		"prefix": "Re",
+		"scope": "markdown, latex",
+		"body": [
+			"\\text{Re} $0",
+		],
+		"description": "Reynolds number"
+	},
+
+	"norm of an object": {
+		"prefix": "norm",
+		"scope": "markdown, latex",
+		"body": [
+			"\\left\\Vert $1 \\right\\Vert $0",
+		],
+		"description": "norm of an object"
+	},
+
+}
