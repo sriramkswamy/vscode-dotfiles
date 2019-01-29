@@ -1,3 +1,4 @@
+code --install-extension geddski.macros
 code --install-extension DotJoshJohnson.xml
 code --install-extension hollowtree.vue-snippets
 code --install-extension ms-vsliveshare.vsliveshare

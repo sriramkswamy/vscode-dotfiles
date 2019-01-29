@@ -3,10 +3,22 @@
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
+
+        // Markdown and pandoc //
         {
             "label": "Markdown pandoc make PDF",
             "type": "shell",
             "command": "pandoc -V geometry:margin=1in ${fileDirname}/${fileBasename} -o ${fileDirname}/${fileBasenameNoExtension}.pdf",
+            "group": "markdown",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Markdown pandoc make HTML",
+            "type": "shell",
+            "command": "pandoc ${fileDirname}/${fileBasename} -s --mathjax -o ${fileDirname}/${fileBasenameNoExtension}.html",
             "group": "markdown",
             "presentation": {
                 "reveal": "always",
