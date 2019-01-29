@@ -484,4 +484,190 @@
 
     // python macros //
 
+    // run python in terminal
+    {
+        "key": "ctrl+m r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "ipython\r",
+        },
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // run python desktop
+    {
+        "key": "ctrl+m shift+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "python\r",
+        },
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // check workspace variable under cursor
+    {
+        "key": "ctrl+m w",
+        "command": "macros.pythonSendWhosAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // check selected workspace variable
+    {
+        "key": "ctrl+m w",
+        "command": "macros.pythonSendWhosAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get size of variable under cursor
+    {
+        "key": "ctrl+m z",
+        "command": "macros.pythonSendSizeAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get size of selected variable
+    {
+        "key": "ctrl+m z",
+        "command": "macros.pythonSendSizeAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get shape of variable under cursor
+    {
+        "key": "ctrl+m n",
+        "command": "macros.pythonSendShapeAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get shape of selected variable
+    {
+        "key": "ctrl+m n",
+        "command": "macros.pythonSendShapeAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get length of variable under cursor
+    {
+        "key": "ctrl+m l",
+        "command": "macros.pythonSendLengthAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get length of selected variable
+    {
+        "key": "ctrl+m l",
+        "command": "macros.pythonSendLengthAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get dimensions of variable under cursor
+    {
+        "key": "ctrl+m d",
+        "command": "macros.pythonSendDimAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get dimensions of selected variable
+    {
+        "key": "ctrl+m d",
+        "command": "macros.pythonSendDimAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get type of variable under cursor
+    {
+        "key": "ctrl+m t",
+        "command": "macros.pythonSendTypeAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get type of selected variable
+    {
+        "key": "ctrl+m f",
+        "command": "macros.pythonSendTypeAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get mean of variable under cursor
+    {
+        "key": "ctrl+m m",
+        "command": "macros.pythonSendMeanAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get mean of selected variable
+    {
+        "key": "ctrl+m m",
+        "command": "macros.pythonSendMeanAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get variance of variable under cursor
+    {
+        "key": "ctrl+m shift+m",
+        "command": "macros.pythonSendVarianceAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get variance of selected variable
+    {
+        "key": "ctrl+m shift+m",
+        "command": "macros.pythonSendVarianceAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get standard deviation of variable under cursor
+    {
+        "key": "ctrl+m shift+d",
+        "command": "macros.pythonSendStddevAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get standard deviation of selected variable
+    {
+        "key": "ctrl+m shift+d",
+        "command": "macros.pythonSendStddevAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get sum of variable under cursor
+    {
+        "key": "ctrl+m s",
+        "command": "macros.pythonSendSumAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get sum of selected variable
+    {
+        "key": "ctrl+m s",
+        "command": "macros.pythonSendSumAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get cumulative sum of variable under cursor
+    {
+        "key": "ctrl+m shift+s",
+        "command": "macros.pythonSendCumsumAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get cumulative sum of selected variable
+    {
+        "key": "ctrl+m shift+s",
+        "command": "macros.pythonSendCumsumAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // get help of variable under cursor
+    {
+        "key": "ctrl+m h",
+        "command": "macros.pythonSendHelpAndWordNormal",
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+    // get help of selected variable
+    {
+        "key": "ctrl+m h",
+        "command": "macros.pythonSendHelpAndWordVisual",
+        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
+    // clear screen
+    {
+        "key": "ctrl+m c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "clear\r",
+        },
+        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceLangId = 'python'"
+    },
+
 ]

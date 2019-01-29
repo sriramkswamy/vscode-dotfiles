@@ -2606,6 +2606,237 @@
             "workbench.action.terminal.runSelectedText",
         ],
 
+        // python macros //
+
+        // what is the variable
+        "pythonSendWhosAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "whos "
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendWhosAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "whos "
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get size
+        "pythonSendSizeAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".size\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendSizeAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".size\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get shape
+        "pythonSendShapeAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".shape\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendShapeAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".shape\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get the length of the variable
+        "pythonSendLengthAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "len()\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendLengthAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "len()\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get dimensions of the variable
+        "pythonSendDimAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".ndim\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendDimAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".ndim\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get type of the variable
+        "pythonSendTypeAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "type()\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendTypeAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "type()\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get mean of the variable
+        "pythonSendMeanAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".mean()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendMeanAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".mean()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get variance of the variable
+        "pythonSendVarianceAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".var()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendVarianceAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".var()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get standard deviation of the variable
+        "pythonSendStddevAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".stddev()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendStddevAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".stddev()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get sum of the variable
+        "pythonSendSumAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".sum()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendSumAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".sum()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get cumulative sum of the variable
+        "pythonSendCumsumAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".cumsum()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendCumsumAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": ".cumsum()\u001b[D\u001b[D\u001b[5D\u001b[D"
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+        // get help for word
+        "pythonSendHelpAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "help "
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
+        "pythonSendHelpAndWordVisual": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "help "
+                }
+            },
+            "workbench.action.terminal.runSelectedText",
+        ],
+
+
     },
 
 }
