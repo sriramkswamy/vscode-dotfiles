@@ -1,63 +1,63 @@
 {
 
     /*     Appearance */
-
+    
     // Controls if turning on Zen Mode also puts the workbench into full screen
     // mode.
     "zenMode.fullScreen": true,
-
+    
     // Controls if turning on Zen Mode also hides the status bar at the bottom
     // of the workbench.
     "zenMode.hideStatusBar": false,
-
+    
     // Controls if turning on Zen Mode also hides workbench tabs.
     "zenMode.hideTabs": true,
-
+    
     // Controls if turning on Zen Mode also hides the activity bar at the left
     // of the workbench.
     "zenMode.hideActivityBar": true,
-
+    
     // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
     "explorer.openEditors.visible": 0,
-
+    
     // Controls if opened editors should show in tabs or not.
     "workbench.editor.showTabs": false,
-
+    
     // Controls the visibility of the status bar at the bottom of the workbench.
     "workbench.statusBar.visible": true,
-
+    
     // Specifies the icon theme used in the workbench or 'null' to not show any
     // file icons.
     "workbench.iconTheme": "eq-material-theme-icons-darker",
-
+    
     // Controls the location of the sidebar. It can either show on the left or
     // right of the workbench.
     "workbench.sideBar.location": "left",
 
     // Controls where the panel is located
     "workbench.panel.defaultLocation": "bottom",
-
+    
     // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
     "window.menuBarVisibility": "toggle",
-
+    
     // theme
-    "workbench.colorTheme": "Material Theme Darker",
-
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    
     // Controls how the editor should render whitespace characters, possibilities
     // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
     // single spaces between words.
     "editor.renderWhitespace": "none",
-
+    
     // Controls the visibility of the activity bar in the workbench.
     "workbench.activityBar.visible": false,
-
+    
     // Controls the visibility of the Twitter feedback (smiley) in the status
     // bar at the bottom of the workbench.
     "workbench.statusBar.feedback.visible": false,
-
+    
     // Controls if the minimap is shown
     "editor.minimap.enabled": false,
-
+    
     // Render vertical rulers after a certain number of monospace characters.
     // Use multiple values for multiple rulers. No rulers are drawn if array is
     // empty
@@ -65,59 +65,59 @@
         79,
         99
     ],
-
+    
     // Control the cursor animation style, possible values are 'blink',
     // 'smooth', 'phase', 'expand' and 'solid'
     "editor.cursorBlinking": "solid",
-
+    
     // Controls the cursor style, accepted values are 'block', 'block-outline',
     // 'line', 'line-thin', 'underline' and 'underline-thin'
     "editor.cursorStyle": "line",
-
+    
     // Controls the width of the cursor when editor.cursorStyle is set to 'line'
     "editor.cursorWidth": 2,
-
+    
     // Controls the display of line numbers. Possible values are 'on', 'off',
     // and 'relative'. 'relative' shows the line count from the current cursor
     // position.
     "editor.lineNumbers": "relative",
-
+    
     // Controls which editor is shown at startup, if none is restored from the
     // previous session. Select 'none' to start without an editor, 'welcomePage'
     // to open the Welcome page (default), 'newUntitledFile' to open a new
     // untitled file (only opening an empty workspace).
     "workbench.startupEditor": "newUntitledFile",
-
+    
     // Controls how windows are being reopened after a restart. Select 'none' to
     // always start with an empty workspace, 'one' to reopen the last window you
     // worked on, 'folders' to reopen all windows that had folders opened or 'all'
     // to reopen all windows of your last session.
     "window.restoreWindows": "none",
-
+    
     // Controls the font size in pixels.
     "editor.fontSize": 14,
-
+    
     // Controls the font family.
     "editor.fontFamily": "Fira Code, Monaco, Menlo, monospace",
-
+    
     // Enables font ligatures
     "editor.fontLigatures": true,
-
+    
     /*     Formatting */
-
+    
     // Controls if the editor should automatically format 
     // the line after typing
     "editor.formatOnType": false,
-
+    
     // Controls if the editor should automatically format the pasted content. A
     // formatter must be available and the formatter should be able to format a
     // range in a document.
     "editor.formatOnPaste": true,
-
+    
     // Format a file on save. A formatter must be available, the file must not be
     // auto-saved, and editor must not be shutting down.
     "editor.formatOnSave": false,
-
+    
     // Chars to align
     "alignment.chars": {
         ":": {
@@ -169,9 +169,9 @@
             "spaceAfter": 1
         }
     },
-
+    
     /*     Files */
-
+    
     // Configure glob patterns for excluding files and folders. For example, the
     // files explorer decides which files and folders to show or hide based on this
     // setting.
@@ -210,7 +210,7 @@
         "**/*.eps": true,
         "**/*.ezdraw": true
     },
-
+    
     // Configure glob patterns for excluding files and folders in searches. Inherits
     // all glob patterns from the files.exclude setting.
     "search.exclude": {
@@ -271,13 +271,9 @@
 
     // Specifies which messages should be suppressed
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
+        "suppressFileNotUnderSourceControlWarning": true,
         "suppressLineUncommittedWarning": true,
         "suppressNoRepositoryWarning": true,
-        "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
@@ -294,15 +290,8 @@
 
     /* LaTeX */
 
-    // Build LaTeX after saving LaTeX source file.
-    // This property defines whether LaTeX Workshop will execute the LaTeX
-    // toolchain command(s) to build the project after new LaTeX contents are
-    // saved.
-    "latex-workshop.latex.autoBuild.onSave.enabled": true,
-
-    // Build LaTeX after a LaTeX source file has changed in the workspace.
-    // This property defines whether LaTeX Workshop will execute the LaTeX toolchain command(s) to build the project after any LaTeX file in the workspace is saved on the disk which is not open in the active editor window.
-    "latex-workshop.latex.autoBuild.onTexChange.enabled": false,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
 
     // Files to clean.
     // This property must be an array of strings. File globs such as *.removeme, something?.aux can be used.
@@ -330,11 +319,7 @@
         // "*.synctex.gz",
         "*.fdb_latexmk"
     ],
-
-    // Delete LaTeX auxillary files after building project.
-    // This property defines whether LaTeX Workshop will clean up all unnecessary files after building the project.
-    "latex-workshop.latex.clean.enabled": true,
-
+    
     // The section names of LaTeX outline hierarchy.
     // This property is an array of case-sensitive strings in the order of document structure hierarchy. For multiple tags in the same level, seperate the tags with `|` as delimiters, e.g., `section|alternative`.
     "latex-workshop.view.outline.sections": [
@@ -344,45 +329,45 @@
         "subsubsection",
         "frame"
     ],
-
+    
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.outDir": "./build/",
     "latex-workshop.chktex.enabled": true,
 
     /* MATLAB */
-
+    
     // The path to the MATLAB and mlint executable
     "matlab.matlabpath": "/home/sriramkrish92/MATLAB/bin/matlab",
     "matlab.mlintpath": "/home/sriramkrish92/MATLAB/bin/glnxa64/mlint",
-
+    
     /* Files */
-
+    
     // Associate all .m files to MATLAB
     "files.associations": {
         "*.m": "matlab",
         "*.el": "lisp"
     },
-
+    
     /*     Python */
-
+    
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv,
     // ~/Envs, ~/.virtualenvs).
     "python.venvPath": "~/venv",
-
+    
     // Executable path
     "python.pythonPath": "/usr/bin/python",
-
+    
     /*     Java */
     "java.errors.incompleteClasspath.severity": "ignore",
-
+    
     /*     C/C++ */
-
+    
     // Intellisense
     "C_Cpp.intelliSenseEngine": "Default",
-
+    
     /*     Projects */
-
+    
     "gitProjectManager.baseProjectsFolders": [
         "~/Dropbox/PhD/codes",
         "~/Dropbox/PhD/publications/papers",
@@ -390,7 +375,7 @@
         "~/Documents",
         "~/Downloads"
     ],
-
+    
     /* Misc */
 
     "explorer.confirmDelete": false,
@@ -414,7 +399,7 @@
         "comments": true,
         "strings": true
     },
-
+    
     // Controls if suggestions should be accepted on 'Enter' - in addition to
     // when it makes a textual change
     "editor.acceptSuggestionOnEnter": "smart",
@@ -443,6 +428,10 @@
     /* Terminal */
 
     "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.commandsToSkipShell": [
+        // Send quick open's keybinding to the shell
+        "-workbench.action.quickOpen",
+    ],
 
     /////////
     // Vim //
@@ -463,39 +452,59 @@
                 "["
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.marker.prevInFiles"
-            }]
-        }, {
+            "commands": [
+                {
+                    "command": "editor.action.marker.prevInFiles"
+                }
+            ]
+        },        {
             "before": [
                 "]"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.marker.nextInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.marker.nextInFiles"
+                }
+            ]
         },
 
-        // split editor horizontally
+         // split editor horizontally
         {
             "before": [
                 "-"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.splitEditorDown"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorDown"
+                }
+            ]
         },
-
         // split editor vertically
         {
             "before": [
                 "|"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.splitEditorRight"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorRight"
+                }
+            ]
+        },
+
+        // goto line
+        {
+            "before": [
+                ":"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.gotoLine"
+                }
+            ]
         },
 
         // star search centering
@@ -504,7 +513,7 @@
                 "*"
             ],
             "after": [
-                "*", "z", "z"
+                "*","z","z"
             ]
         },
 
@@ -514,20 +523,24 @@
                 "\\"
             ],
             "after": [],
-            "commands": [{
-                "command": "alignment.align"
-            }]
+            "commands": [
+                {
+                    "command": "alignment.align"
+                }
+            ]
         },
 
         // change case
         {
             "before": [
-                "c", "r"
+                "c","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "extension.changeCase.commands"
-            }]
+            "commands": [
+                {
+                    "command": "extension.changeCase.commands"
+                }
+            ]
         },
 
         // move based on visual lines
@@ -536,7 +549,7 @@
                 "j"
             ],
             "after": [
-                "g", "j"
+                "g","j"
             ]
         },
         {
@@ -544,60 +557,81 @@
                 "k"
             ],
             "after": [
-                "g", "k"
+                "g","k"
             ]
         },
 
         // git blame
         {
             "before": [
-                "g", "b"
+                "g","b"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.toggleCodeLens"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.toggleCodeLens"
+                }
+            ]
         },
 
         // first instance of search
         {
             "before": [
-                "g", "d"
+                "g","d"
             ],
             "after": [
-                "*", "g", "g", "n", "z", "z"
+                "*","g","g","n","z","z"
             ]
         },
 
         // git
         {
             "before": [
-                "g", "k"
+                "g","j"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.compareEditor.nextChange"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.compareEditor.previousChange"
+                }
+            ]
         },
         {
             "before": [
-                "g", "j"
+                "g","k"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.compareEditor.previousChange"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.compareEditor.nextChange"
+                }
+            ]
         },
 
         // multiple cursors - add cursor at the end of line
         {
             "before": [
-                "g", "l"
+                "g","l"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.insertCursorAtEndOfEachLineSelected"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.insertCursorAtEndOfEachLineSelected"
+                }
+            ]
+        },
+
+        // next search result
+        {
+            "before": [
+                "g", "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "wwm.aligncode"
+                }
+            ]
         },
 
         // next search result
@@ -606,31 +640,37 @@
                 "g", "n"
             ],
             "after": [],
-            "commands": [{
-                "command": "search.action.focusNextSearchResult"
-            }]
+            "commands": [
+                {
+                    "command": "search.action.focusNextSearchResult"
+                }
+            ]
         },
 
         // replace in current file
         {
             "before": [
-                "g", "r"
+                "g","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.startFindReplaceAction"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.startFindReplaceAction"
+                }
+            ]
         },
 
         // multiple cursors - change all
         {
             "before": [
-                "g", "w"
+                "g","w"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.changeAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
         },
 
         // previous search result
@@ -639,42 +679,63 @@
                 "g", "N"
             ],
             "after": [],
-            "commands": [{
-                "command": "search.action.focusPreviousSearchResult"
-            }]
+            "commands": [
+                {
+                    "command": "search.action.focusPreviousSearchResult"
+                }
+            ]
         },
 
         // format document
         {
             "before": [
-                "g", "Q"
+                "g","Q"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.formatDocument"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.formatDocument"
+                }
+            ]
         },
 
         // replace in files/project
         {
             "before": [
-                "g", "R"
+                "g","R"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.replaceInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.replaceInFiles"
+                }
+            ]
         },
-
+        
         // multiple cursors - add previous match
         {
             "before": [
-                "g", "W"
+                "g","W"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.addSelectionToPreviousFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.addSelectionToPreviousFindMatch"
+                }
+            ]
+        },
+
+        // latex sync
+        {
+            "before": [
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.synctex"
+                }
+            ]
         },
 
         // center next search result
@@ -683,7 +744,7 @@
                 "n"
             ],
             "after": [
-                "n", "z", "z"
+                "n","z","z"
             ]
         },
 
@@ -701,9 +762,11 @@
                 "t"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.gotoSymbol"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.gotoSymbol"
+                }
+            ]
         },
 
         // multiple cursors - add match
@@ -712,47 +775,57 @@
                 "w"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.addSelectionToNextFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.addSelectionToNextFindMatch"
+                }
+            ]
         },
 
         // folding
         {
             "before": [
-                "z", "f"
+                "z","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.foldRecursively"
-            }]
+            "commands": [
+                {
+                    "command": "editor.foldRecursively"
+                }
+            ]
         },
         {
             "before": [
-                "z", "o"
+                "z","o"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.unfoldRecursively"
-            }]
+            "commands": [
+                {
+                    "command": "editor.unfoldRecursively"
+                }
+            ]
         },
         {
             "before": [
-                "z", "m"
+                "z","m"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.foldAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.foldAll"
+                }
+            ]
         },
         {
             "before": [
-                "z", "r"
+                "z","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.unfoldAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.unfoldAll"
+                }
+            ]
         },
 
         // jump
@@ -761,7 +834,7 @@
                 "J"
             ],
             "after": [
-                "g", "d"
+                "g","d"
             ]
         },
 
@@ -771,18 +844,18 @@
                 "K"
             ],
             "after": [
-                "g", "h"
+                "g","h"
             ]
         },
 
-        // latex sync
+        // maximize editor group
         {
             "before": [
                 "M"
             ],
             "after": [],
             "commands": [{
-                "command": "latex-workshop.synctex"
+                "command": "workbench.action.maximizeEditor"
             }]
         },
 
@@ -792,7 +865,7 @@
                 "N"
             ],
             "after": [
-                "N", "z", "z"
+                "N","z","z"
             ]
         },
 
@@ -802,7 +875,7 @@
                 "Q"
             ],
             "after": [
-                "@", "@"
+                "@","@"
             ]
         },
 
@@ -820,9 +893,11 @@
                 "T"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.showAllSymbols"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.showAllSymbols"
+                }
+            ]
         },
 
         // multiple cursors - skip match
@@ -831,9 +906,11 @@
                 "W"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.moveSelectionToNextFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.moveSelectionToNextFindMatch"
+                }
+            ]
         },
 
         // copy till end of line
@@ -853,525 +930,597 @@
                 "Z"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.toggleFullScreen"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.toggleFullScreen"
+                }
+            ]
         },
 
-
+        
         // add file/folder/workspace
         {
             "before": [
-                "<leader>", "a", "a"
+                "<leader>","a","a"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.openFolder"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFolder"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "f"
+                "<leader>","a","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.openFile"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFile"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "s"
+                "<leader>","a","s"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.saveWorkspaceAs"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.saveWorkspaceAs"
+                }
+            ]
         },
         {
             "before": [
                 "<leader>", "a", "u"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.newUntitledFile"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.newUntitledFile"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "w"
+                "<leader>","a","w"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.openWorkspace"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openWorkspace"
+                }
+            ]
         },
 
         // git branch
         {
             "before": [
-                "<leader>", "b"
+                "<leader>","b"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.showQuickBranchHistory"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.showQuickBranchHistory"
+                }
+            ]
         },
 
         // git commit details
         {
             "before": [
-                "<leader>", "c"
+                "<leader>","c"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.showQuickCommitDetails"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.showQuickCommitDetails"
+                }
+            ]
         },
 
         // terminal
         {
             "before": [
-                "<leader>", "d"
+                "<leader>","d"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.terminal.toggleTerminal"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
         },
 
-        // git explore
+        // explore git
         {
             "before": [
-                "<leader>", "e"
+                "<leader>","e"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.view.scm"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.view.scm"
+                }
+            ]
         },
 
         // view files
         {
             "before": [
-                "<leader>", "f"
+                "<leader>","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.view.explorer"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openView"
+                }
+            ]
         },
 
         // debugging
         {
             "before": [
-                "<leader>", "g"
+                "<leader>","g"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.debug.selectandstart"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.debug.selectandstart"
+                }
+            ]
         },
 
         // hide notifications
         {
             "before": [
-                "<leader>", "h"
+                "<leader>","h"
             ],
             "after": [],
-            "commands": [{
-                "command": "notifications.clearAll"
-            }]
+            "commands": [
+                {
+                    "command": "notifications.clearAll"
+                }
+            ]
         },
 
         // information
         {
             "before": [
-                "<leader>", "i", "d"
+                "<leader>","i","d"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekDefinition"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekDefinition"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "l"
+                "<leader>","i","l"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekDeclaration"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekDeclaration"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "i"
+                "<leader>","i","i"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekImplementation"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekImplementation"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "r"
+                "<leader>","i","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.referenceSearch.trigger"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.referenceSearch.trigger"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "t"
+                "<leader>","i","t"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekTypeDefinition"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekTypeDefinition"
+                }
+            ]
         },
 
         // show all commands
         {
             "before": [
-                "<leader>", "j"
+                "<leader>","j"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.showCommands",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
         },
 
         // navigate files
         {
             "before": [
-                "<leader>", "k"
+                "<leader>","k"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.quickOpenPreviousEditor",
-                "args": []
-            }]
-        },
-
-        // problems
-        {
-            "before": [
-                "<leader>", "l"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.actions.view.problems"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpenPreviousEditor",
+                    "args": []
+                }
+            ]
         },
 
         // run task
         {
             "before": [
-                "<leader>", "m"
+                "<leader>","m"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.tasks.runTask"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.tasks.runTask"
+                }
+            ]
         },
 
         // run code
         {
             "before": [
-                "<leader>", "n"
+                "<leader>","n"
             ],
             "after": [],
-            "commands": [{
-                "command": "code-runner.run"
-            }]
+            "commands": [
+                {
+                    "command": "code-runner.run"
+                }
+            ]
         },
 
-        // output
+        // out of the group
         {
             "before": [
-                "<leader>", "o"
+                "<leader>","o"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.output.toggleOutput"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeEditorsInGroup"
+                }
+            ]
         },
 
         // search in folder/project
         {
             "before": [
-                "<leader>", "p"
+                "<leader>","p"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.findInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
         },
 
         // quitting
         {
             "before": [
-                "<leader>", "q"
+                "<leader>","q"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.closeActiveEditor",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
         },
 
         // recent files
         {
             "before": [
-                "<leader>", "r"
+                "<leader>","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.openRecent"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
+                }
+            ]
         },
 
         // send things to terminal
         {
             "before": [
-                "<leader>", "s", "s"
+                "<leader>","s","s"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.terminal.runActiveFile"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runActiveFile"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "w"
+                "<leader>","s","i","w"
             ],
             "after": [
-                "v", "i", "w"
+                "v","i","w"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "W"
+                "<leader>","s","i","W"
             ],
             "after": [
-                "v", "i", "W"
+                "v","i","W"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "p"
+                "<leader>","s","i","p"
             ],
             "after": [
-                "v", "i", "p"
+                "v","i","p"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "["
+                "<leader>","s","i","["
             ],
             "after": [
-                "v", "i", "["
+                "v","i","["
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "]"
+                "<leader>","s","i","]"
             ],
             "after": [
-                "v", "i", "]"
+                "v","i","]"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "{"
+                "<leader>","s","i","{"
             ],
             "after": [
-                "v", "i", "{"
+                "v","i","{"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "}"
+                "<leader>","s","i","}"
             ],
             "after": [
-                "v", "i", "}"
+                "v","i","}"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", "("
+                "<leader>","s","i","("
             ],
             "after": [
-                "v", "i", "("
+                "v","i","("
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "i", ")"
+                "<leader>","s","i",")"
             ],
             "after": [
-                "v", "i", ")"
+                "v","i",")"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "w"
+                "<leader>","s","a","w"
             ],
             "after": [
-                "v", "a", "w"
+                "v","a","w"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "W"
+                "<leader>","s","a","W"
             ],
             "after": [
-                "v", "a", "W"
+                "v","a","W"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "p"
+                "<leader>","s","a","p"
             ],
             "after": [
-                "v", "a", "p"
+                "v","a","p"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "("
+                "<leader>","s","a","("
             ],
             "after": [
-                "v", "a", "("
+                "v","a","("
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", ")"
+                "<leader>","s","a",")"
             ],
             "after": [
-                "v", "a", ")"
+                "v","a",")"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "["
+                "<leader>","s","a","["
             ],
             "after": [
-                "v", "a", "["
+                "v","a","["
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "]"
+                "<leader>","s","a","]"
             ],
             "after": [
-                "v", "a", "]"
+                "v","a","]"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "{"
+                "<leader>","s","a","{"
             ],
             "after": [
-                "v", "a", "{"
+                "v","a","{"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "s", "a", "}"
+                "<leader>","s","a","}"
             ],
             "after": [
-                "v", "a", "}"
+                "v","a","}"
             ],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
 
         // outline
         {
             "before": [
-                "<leader>", "t"
+                "<leader>","t"
             ],
             "after": [],
-            "commands": [{
-                "command": "outline.focus"
-            }]
+            "commands": [
+                {
+                    "command": "outline.focus"
+                }
+            ]
         },
 
         // git checkout
         {
             "before": [
-                "<leader>", "u"
+                "<leader>","u"
             ],
             "after": [],
-            "commands": [{
-                "command": "git.checkout"
-            }]
-        },
-
-        // view debug
-        {
-            "before": [
-                "<leader>", "v"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.view.debug"
-            }]
+            "commands": [
+                {
+                    "command": "git.checkout"
+                }
+            ]
         },
 
         // save file
@@ -1380,55 +1529,51 @@
                 "<leader>", "w"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.save",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
         },
 
         // latex actions
         {
             "before": [
-                "<leader>", "x"
+                "<leader>","x"
             ],
             "after": [],
-            "commands": [{
-                "command": "latex-workshop.actions"
-            }]
-        },
-
-        // view extensions
-        {
-            "before": [
-                "<leader>", "y"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.view.extensions",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "latex-workshop.actions"
+                }
+            ]
         },
 
         // close messages
         {
             "before": [
-                "<leader>", "z"
+                "<leader>","z"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.closeMessages"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeMessages"
+                }
+            ]
         },
 
         // appearance
         {
             "before": [
-                "<leader>", "."
+                "<leader>","."
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.selectTheme"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.selectTheme"
+                }
+            ]
         },
 
     ],
@@ -1442,17 +1587,21 @@
                 "["
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.marker.prevInFiles"
-            }]
-        }, {
+            "commands": [
+                {
+                    "command": "editor.action.marker.prevInFiles"
+                }
+            ]
+        },        {
             "before": [
                 "]"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.marker.nextInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.marker.nextInFiles"
+                }
+            ]
         },
 
         // split editor horizontally
@@ -1461,9 +1610,11 @@
                 "-"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.splitEditorDown"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorDown"
+                }
+            ]
         },
 
         // split editor vertically
@@ -1472,9 +1623,11 @@
                 "|"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.splitEditorRight"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorRight"
+                }
+            ]
         },
 
         // star search centering
@@ -1483,7 +1636,7 @@
                 "*"
             ],
             "after": [
-                "*", "z", "z"
+                "*","z","z"
             ]
         },
 
@@ -1493,31 +1646,37 @@
                 "\\"
             ],
             "after": [],
-            "commands": [{
-                "command": "alignment.align"
-            }]
+            "commands": [
+                {
+                    "command": "alignment.align"
+                }
+            ]
         },
 
         // change case
         {
             "before": [
-                "c", "r"
+                "c","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "extension.changeCase.commands"
-            }]
+            "commands": [
+                {
+                    "command": "extension.changeCase.commands"
+                }
+            ]
         },
 
         // diff update changes
         {
             "before": [
-                "d", "u"
+                "d","u"
             ],
             "after": [],
-            "commands": [{
-                "command": "git.openChange"
-            }]
+            "commands": [
+                {
+                    "command": "git.openChange"
+                }
+            ]
         },
 
         // move based on visual lines
@@ -1526,7 +1685,7 @@
                 "j"
             ],
             "after": [
-                "g", "j"
+                "g","j"
             ]
         },
         {
@@ -1534,80 +1693,92 @@
                 "k"
             ],
             "after": [
-                "g", "k"
+                "g","k"
             ]
         },
 
         // git diff navigation
         {
             "before": [
-                "g", "-"
+                "g","-"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.dirtydiff.previous"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.dirtydiff.previous"
+                }
+            ]
         },
         {
             "before": [
-                "g", "+"
+                "g","+"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.dirtydiff.next"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.dirtydiff.next"
+                }
+            ]
         },
 
         // git blame
         {
             "before": [
-                "g", "b"
+                "g","b"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.toggleCodeLens"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.toggleCodeLens"
+                }
+            ]
         },
 
         // first instance of search
         {
             "before": [
-                "g", "d"
+                "g","d"
             ],
             "after": [
-                "*", "g", "g", "n", "z", "z"
+                "*","g","g","n","z","z"
             ]
         },
 
         // git
         {
             "before": [
-                "g", "k"
+                "g","k"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.compareEditor.nextChange"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.compareEditor.nextChange"
+                }
+            ]
         },
         {
             "before": [
-                "g", "j"
+                "g","j"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.compareEditor.previousChange"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.compareEditor.previousChange"
+                }
+            ]
         },
 
         // multiple cursors - add cursor at the end of line
         {
             "before": [
-                "g", "l"
+                "g","l"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.insertCursorAtEndOfEachLineSelected"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.insertCursorAtEndOfEachLineSelected"
+                }
+            ]
         },
 
         // next search result
@@ -1616,31 +1787,37 @@
                 "g", "n"
             ],
             "after": [],
-            "commands": [{
-                "command": "search.action.focusNextSearchResult"
-            }]
+            "commands": [
+                {
+                    "command": "search.action.focusNextSearchResult"
+                }
+            ]
         },
 
         // replace in current file
         {
             "before": [
-                "g", "r"
+                "g","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.startFindReplaceAction"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.startFindReplaceAction"
+                }
+            ]
         },
 
         // multiple cursors - change all
         {
             "before": [
-                "g", "w"
+                "g","w"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.changeAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
         },
 
         // previous search result
@@ -1649,42 +1826,63 @@
                 "g", "N"
             ],
             "after": [],
-            "commands": [{
-                "command": "search.action.focusPreviousSearchResult"
-            }]
+            "commands": [
+                {
+                    "command": "search.action.focusPreviousSearchResult"
+                }
+            ]
         },
 
         // format selection
         {
             "before": [
-                "g", "Q"
+                "g","Q"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.formatSelection"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.formatSelection"
+                }
+            ]
         },
 
         // replace in files/project
         {
             "before": [
-                "g", "R"
+                "g","R"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.replaceInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.replaceInFiles"
+                }
+            ]
         },
-
+        
         // multiple cursors - add previous match
         {
             "before": [
-                "g", "W"
+                "g","W"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.addSelectionToPreviousFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.addSelectionToPreviousFindMatch"
+                }
+            ]
+        },
+
+        // latex sync
+        {
+            "before": [
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.synctex"
+                }
+            ]
         },
 
         // center next search result
@@ -1693,7 +1891,7 @@
                 "n"
             ],
             "after": [
-                "n", "z", "z"
+                "n","z","z"
             ]
         },
 
@@ -1711,9 +1909,11 @@
                 "t"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.gotoSymbol"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.gotoSymbol"
+                }
+            ]
         },
 
         // multiple cursors - add match
@@ -1722,47 +1922,57 @@
                 "w"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.addSelectionToNextFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.addSelectionToNextFindMatch"
+                }
+            ]
         },
 
         // folding
         {
             "before": [
-                "z", "f"
+                "z","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.foldRecursively"
-            }]
+            "commands": [
+                {
+                    "command": "editor.foldRecursively"
+                }
+            ]
         },
         {
             "before": [
-                "z", "o"
+                "z","o"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.unfoldRecursively"
-            }]
+            "commands": [
+                {
+                    "command": "editor.unfoldRecursively"
+                }
+            ]
         },
         {
             "before": [
-                "z", "m"
+                "z","m"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.foldAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.foldAll"
+                }
+            ]
         },
         {
             "before": [
-                "z", "r"
+                "z","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.unfoldAll"
-            }]
+            "commands": [
+                {
+                    "command": "editor.unfoldAll"
+                }
+            ]
         },
 
         // jump
@@ -1771,7 +1981,7 @@
                 "J"
             ],
             "after": [
-                "g", "d"
+                "g","d"
             ]
         },
 
@@ -1781,18 +1991,18 @@
                 "K"
             ],
             "after": [
-                "g", "h"
+                "g","h"
             ]
         },
 
-        // latex sync
+        // maximize editor group
         {
             "before": [
                 "M"
             ],
             "after": [],
             "commands": [{
-                "command": "latex-workshop.synctex"
+                "command": "workbench.action.maximizeEditor"
             }]
         },
 
@@ -1802,7 +2012,7 @@
                 "N"
             ],
             "after": [
-                "N", "z", "z"
+                "N","z","z"
             ]
         },
 
@@ -1812,7 +2022,7 @@
                 "Q"
             ],
             "after": [
-                "@", "@"
+                "@","@"
             ]
         },
 
@@ -1830,9 +2040,11 @@
                 "T"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.showAllSymbols"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.showAllSymbols"
+                }
+            ]
         },
 
         // multiple cursors - skip match
@@ -1841,9 +2053,11 @@
                 "W"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.moveSelectionToNextFindMatch"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.moveSelectionToNextFindMatch"
+                }
+            ]
         },
 
         // full screen
@@ -1852,325 +2066,361 @@
                 "Z"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.toggleFullScreen"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.toggleFullScreen"
+                }
+            ]
         },
 
         // add file/folder/workspace
         {
             "before": [
-                "<leader>", "a", "a"
+                "<leader>","a","a"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.openFolder"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFolder"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "f"
+                "<leader>","a","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.openFile"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFile"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "s"
+                "<leader>","a","s"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.saveWorkspaceAs"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.saveWorkspaceAs"
+                }
+            ]
         },
         {
             "before": [
                 "<leader>", "a", "u"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.newUntitledFile"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.newUntitledFile"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "a", "w"
+                "<leader>","a","w"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.openWorkspace"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openWorkspace"
+                }
+            ]
         },
 
         // git branch
         {
             "before": [
-                "<leader>", "b"
+                "<leader>","b"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.showQuickBranchHistory"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.showQuickBranchHistory"
+                }
+            ]
         },
 
         // git commit details
         {
             "before": [
-                "<leader>", "c"
+                "<leader>","c"
             ],
             "after": [],
-            "commands": [{
-                "command": "gitlens.showQuickCommitDetails"
-            }]
+            "commands": [
+                {
+                    "command": "gitlens.showQuickCommitDetails"
+                }
+            ]
         },
 
         // terminal
         {
             "before": [
-                "<leader>", "d"
+                "<leader>","d"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.terminal.toggleTerminal"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
         },
 
-        // git explore
+        // explore git using tig
         {
             "before": [
-                "<leader>", "e"
+                "<leader>","e"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.view.scm"
-            }]
+            "commands": [
+                {
+                    "command": "macros.terminalOpenTig"
+                }
+            ]
         },
 
         // view files
         {
             "before": [
-                "<leader>", "f"
+                "<leader>","f"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.view.explorer"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openView"
+                }
+            ]
         },
 
         // debugging
         {
             "before": [
-                "<leader>", "g"
+                "<leader>","g"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.debug.selectandstart"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.debug.selectandstart"
+                }
+            ]
         },
 
         // hide notifications
         {
             "before": [
-                "<leader>", "h"
+                "<leader>","h"
             ],
             "after": [],
-            "commands": [{
-                "command": "notifications.clearAll"
-            }]
+            "commands": [
+                {
+                    "command": "notifications.clearAll"
+                }
+            ]
         },
 
         // information
         {
             "before": [
-                "<leader>", "i", "d"
+                "<leader>","i","d"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekDefinition"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekDefinition"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "l"
+                "<leader>","i","l"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekDeclaration"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekDeclaration"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "i"
+                "<leader>","i","i"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekImplementation"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekImplementation"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "r"
+                "<leader>","i","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.referenceSearch.trigger"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.referenceSearch.trigger"
+                }
+            ]
         },
         {
             "before": [
-                "<leader>", "i", "t"
+                "<leader>","i","t"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.action.peekTypeDefinition"
-            }]
+            "commands": [
+                {
+                    "command": "editor.action.peekTypeDefinition"
+                }
+            ]
         },
 
         // show all commands
         {
             "before": [
-                "<leader>", "j"
+                "<leader>","j"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.showCommands",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
         },
 
         // navigate files
         {
             "before": [
-                "<leader>", "k"
+                "<leader>","k"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.quickOpenPreviousEditor",
-                "args": []
-            }]
-        },
-
-        // problems
-        {
-            "before": [
-                "<leader>", "l"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.actions.view.problems"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpenPreviousEditor",
+                    "args": []
+                }
+            ]
         },
 
         // run task
         {
             "before": [
-                "<leader>", "m"
+                "<leader>","m"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.tasks.runTask"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.tasks.runTask"
+                }
+            ]
         },
 
         // run code
         {
             "before": [
-                "<leader>", "n"
+                "<leader>","n"
             ],
             "after": [],
-            "commands": [{
-                "command": "code-runner.run"
-            }]
+            "commands": [
+                {
+                    "command": "code-runner.run"
+                }
+            ]
         },
 
-        // output
+        // out of the group
         {
             "before": [
-                "<leader>", "o"
+                "<leader>","o"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.output.toggleOutput"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeEditorsInGroup"
+                }
+            ]
         },
 
         // search in folder/project
         {
             "before": [
-                "<leader>", "p"
+                "<leader>","p"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.findInFiles"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
         },
 
         // quitting
         {
             "before": [
-                "<leader>", "q"
+                "<leader>","q"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.closeActiveEditor",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
         },
 
         // recent files
         {
             "before": [
-                "<leader>", "r"
+                "<leader>","r"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.openRecent"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
+                }
+            ]
         },
 
         // send things to terminal
         {
             "before": [
-                "<leader>", "s"
+                "<leader>","s"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.terminal.runSelectedText"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.runSelectedText"
+                }
+            ]
         },
         // outline
         {
             "before": [
-                "<leader>", "t"
+                "<leader>","t"
             ],
             "after": [],
-            "commands": [{
-                "command": "outline.focus"
-            }]
+            "commands": [
+                {
+                    "command": "outline.focus"
+                }
+            ]
         },
 
         // git checkout
         {
             "before": [
-                "<leader>", "u"
+                "<leader>","u"
             ],
             "after": [],
-            "commands": [{
-                "command": "git.checkout"
-            }]
-        },
-
-        // view debug
-        {
-            "before": [
-                "<leader>", "v"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.view.debug"
-            }]
+            "commands": [
+                {
+                    "command": "git.checkout"
+                }
+            ]
         },
 
         // save file
@@ -2179,55 +2429,51 @@
                 "<leader>", "w"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.files.save",
-                "args": []
-            }]
-        },
-
-        // view extensions
-        {
-            "before": [
-                "<leader>", "y"
-            ],
-            "after": [],
-            "commands": [{
-                "command": "workbench.view.extensions",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
         },
 
         // latex actions
         {
             "before": [
-                "<leader>", "x"
+                "<leader>","x"
             ],
             "after": [],
-            "commands": [{
-                "command": "latex-workshop.actions"
-            }]
+            "commands": [
+                {
+                    "command": "latex-workshop.actions"
+                }
+            ]
         },
 
         // close messages
         {
             "before": [
-                "<leader>", "z"
+                "<leader>","z"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.closeMessages"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.closeMessages"
+                }
+            ]
         },
 
         // appearance
         {
             "before": [
-                "<leader>", "."
+                "<leader>","."
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.selectTheme"
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.selectTheme"
+                }
+            ]
         },
 
     ],
@@ -2239,10 +2485,25 @@
     "markdown.extension.showExplorer": true,
     "vsicons.projectDetection.autoReload": true,
 
-    /* Macros */
+    /* Multiple Command Macros */
 
     "macros": {
 
+        // common //
+
+        // open tig/magit
+        "terminalOpenGit": [
+            "workbench.action.terminal.new",
+            {
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "emacs -nw -e (magit-status)\r"
+                    // "text": "tig\r"
+                }
+            },
+            "workbench.action.terminal.focus",
+        ],
+        
         // matlab //
 
         // what is the variable
@@ -2606,237 +2867,6 @@
             "workbench.action.terminal.runSelectedText",
         ],
 
-        // python macros //
-
-        // what is the variable
-        "pythonSendWhosAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "whos "
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendWhosAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "whos "
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get size
-        "pythonSendSizeAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".size\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendSizeAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".size\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get shape
-        "pythonSendShapeAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".shape\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendShapeAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".shape\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get the length of the variable
-        "pythonSendLengthAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "len()\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendLengthAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "len()\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get dimensions of the variable
-        "pythonSendDimAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".ndim\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendDimAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".ndim\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get type of the variable
-        "pythonSendTypeAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "type()\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendTypeAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "type()\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get mean of the variable
-        "pythonSendMeanAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".mean()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendMeanAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".mean()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get variance of the variable
-        "pythonSendVarianceAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".var()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendVarianceAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".var()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get standard deviation of the variable
-        "pythonSendStddevAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".stddev()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendStddevAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".stddev()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get sum of the variable
-        "pythonSendSumAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".sum()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendSumAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".sum()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get cumulative sum of the variable
-        "pythonSendCumsumAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".cumsum()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendCumsumAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": ".cumsum()\u001b[D\u001b[D\u001b[5D\u001b[D"
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-        // get help for word
-        "pythonSendHelpAndWordNormal": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "help "
-                }
-            },
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.terminal.runSelectedText",
-        ],
-        "pythonSendHelpAndWordVisual": [{
-                "command": "workbench.action.terminal.sendSequence",
-                "args": {
-                    "text": "help "
-                }
-            },
-            "workbench.action.terminal.runSelectedText",
-        ],
-
-
     },
-
 }
+

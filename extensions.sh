@@ -3,7 +3,9 @@ code --install-extension DotJoshJohnson.xml
 code --install-extension hollowtree.vue-snippets
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension redhat.vscode-yaml
+code --install-extension naumovs.color-highlight
 code --install-extension wayou.vscode-todo-highlight
+code --install-extension Gruntfuggly.todo-tree
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension mkloubert.vscode-remote-workspace
 code --install-extension vsmobile.vscode-react-native
