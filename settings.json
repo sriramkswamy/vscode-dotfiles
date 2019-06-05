@@ -1,63 +1,65 @@
 {
 
     /*     Appearance */
-    
+
     // Controls if turning on Zen Mode also puts the workbench into full screen
     // mode.
     "zenMode.fullScreen": true,
-    
+
     // Controls if turning on Zen Mode also hides the status bar at the bottom
     // of the workbench.
     "zenMode.hideStatusBar": false,
-    
+
     // Controls if turning on Zen Mode also hides workbench tabs.
     "zenMode.hideTabs": true,
-    
+
     // Controls if turning on Zen Mode also hides the activity bar at the left
     // of the workbench.
     "zenMode.hideActivityBar": true,
-    
+
     // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
     "explorer.openEditors.visible": 0,
-    
+
     // Controls if opened editors should show in tabs or not.
     "workbench.editor.showTabs": false,
-    
+
     // Controls the visibility of the status bar at the bottom of the workbench.
     "workbench.statusBar.visible": true,
-    
+
     // Specifies the icon theme used in the workbench or 'null' to not show any
     // file icons.
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
-    
+    "workbench.iconTheme": "material-icon-theme",
     // Controls the location of the sidebar. It can either show on the left or
     // right of the workbench.
     "workbench.sideBar.location": "left",
 
     // Controls where the panel is located
     "workbench.panel.defaultLocation": "bottom",
-    
+
     // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
     "window.menuBarVisibility": "toggle",
-    
+
     // theme
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    
+    "workbench.colorTheme": "Monokai",
+
     // Controls how the editor should render whitespace characters, possibilities
     // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
     // single spaces between words.
     "editor.renderWhitespace": "none",
-    
+
     // Controls the visibility of the activity bar in the workbench.
     "workbench.activityBar.visible": false,
-    
+
     // Controls the visibility of the Twitter feedback (smiley) in the status
     // bar at the bottom of the workbench.
     "workbench.statusBar.feedback.visible": false,
-    
+
+    // keyboard friendly file launcher
+    "workbench.dialogs.useSimplified": true,
+
     // Controls if the minimap is shown
     "editor.minimap.enabled": false,
-    
+
     // Render vertical rulers after a certain number of monospace characters.
     // Use multiple values for multiple rulers. No rulers are drawn if array is
     // empty
@@ -65,59 +67,62 @@
         79,
         99
     ],
-    
+
+    // smooth cursors
+    "editor.cursorSmoothCaretAnimation": true,
+
     // Control the cursor animation style, possible values are 'blink',
     // 'smooth', 'phase', 'expand' and 'solid'
     "editor.cursorBlinking": "solid",
-    
+
     // Controls the cursor style, accepted values are 'block', 'block-outline',
     // 'line', 'line-thin', 'underline' and 'underline-thin'
     "editor.cursorStyle": "line",
-    
+
     // Controls the width of the cursor when editor.cursorStyle is set to 'line'
     "editor.cursorWidth": 2,
-    
+
     // Controls the display of line numbers. Possible values are 'on', 'off',
     // and 'relative'. 'relative' shows the line count from the current cursor
     // position.
     "editor.lineNumbers": "relative",
-    
+
     // Controls which editor is shown at startup, if none is restored from the
     // previous session. Select 'none' to start without an editor, 'welcomePage'
     // to open the Welcome page (default), 'newUntitledFile' to open a new
     // untitled file (only opening an empty workspace).
     "workbench.startupEditor": "newUntitledFile",
-    
+
     // Controls how windows are being reopened after a restart. Select 'none' to
     // always start with an empty workspace, 'one' to reopen the last window you
     // worked on, 'folders' to reopen all windows that had folders opened or 'all'
     // to reopen all windows of your last session.
     "window.restoreWindows": "none",
-    
+
     // Controls the font size in pixels.
-    "editor.fontSize": 14,
-    
+    "editor.fontSize": 12.5,
+
     // Controls the font family.
     "editor.fontFamily": "Fira Code, Monaco, Menlo, monospace",
-    
+
     // Enables font ligatures
     "editor.fontLigatures": true,
-    
+
     /*     Formatting */
-    
-    // Controls if the editor should automatically format 
+
+    // Controls if the editor should automatically format
     // the line after typing
     "editor.formatOnType": false,
-    
+
     // Controls if the editor should automatically format the pasted content. A
     // formatter must be available and the formatter should be able to format a
     // range in a document.
     "editor.formatOnPaste": true,
-    
+
     // Format a file on save. A formatter must be available, the file must not be
     // auto-saved, and editor must not be shutting down.
     "editor.formatOnSave": false,
-    
+
     // Chars to align
     "alignment.chars": {
         ":": {
@@ -169,9 +174,9 @@
             "spaceAfter": 1
         }
     },
-    
+
     /*     Files */
-    
+
     // Configure glob patterns for excluding files and folders. For example, the
     // files explorer decides which files and folders to show or hide based on this
     // setting.
@@ -210,7 +215,7 @@
         "**/*.eps": true,
         "**/*.ezdraw": true
     },
-    
+
     // Configure glob patterns for excluding files and folders in searches. Inherits
     // all glob patterns from the files.exclude setting.
     "search.exclude": {
@@ -250,6 +255,9 @@
     // this will no longer be a preview.
     "search.location": "panel",
 
+    // debugger position
+    "debug.toolBarLocation": "docked",
+
     /*     Sync settings */
 
     "sync.gist": "cdc9488d91e6bfd9f695556ea7ffa122",
@@ -288,10 +296,37 @@
     // Git code lens on and off for the current session
     "gitlens.codeLens.enabled": false,
 
+    /* Remote */
+
+    "remote.SSH.configFile": "/home/sriramkrish92/.ssh/config",
+
+    /* Languages */
+
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
     /* LaTeX */
 
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.view.pdf.invert": 0.85,
+    "latex-workshop.view.pdf.tab.useNewGroup": true,
+    "latex-workshop.view.pdf.ref.viewer": "external",
+    "latex-workshop.view.pdf.external.command": {
+        "command": "evince",
+        "args": [
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "evince_forward_search",
+        "args": [
+            "%PDF%",
+            "%LINE%",
+            "%TEX%"
+        ]
+    },
 
     // Files to clean.
     // This property must be an array of strings. File globs such as *.removeme, something?.aux can be used.
@@ -319,7 +354,7 @@
         // "*.synctex.gz",
         "*.fdb_latexmk"
     ],
-    
+
     // The section names of LaTeX outline hierarchy.
     // This property is an array of case-sensitive strings in the order of document structure hierarchy. For multiple tags in the same level, seperate the tags with `|` as delimiters, e.g., `section|alternative`.
     "latex-workshop.view.outline.sections": [
@@ -329,45 +364,45 @@
         "subsubsection",
         "frame"
     ],
-    
+
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.outDir": "./build/",
     "latex-workshop.chktex.enabled": true,
 
     /* MATLAB */
-    
+
     // The path to the MATLAB and mlint executable
     "matlab.matlabpath": "/home/sriramkrish92/MATLAB/bin/matlab",
     "matlab.mlintpath": "/home/sriramkrish92/MATLAB/bin/glnxa64/mlint",
-    
+
     /* Files */
-    
+
     // Associate all .m files to MATLAB
     "files.associations": {
         "*.m": "matlab",
         "*.el": "lisp"
     },
-    
+
     /*     Python */
-    
+
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv,
     // ~/Envs, ~/.virtualenvs).
     "python.venvPath": "~/venv",
-    
+
     // Executable path
-    "python.pythonPath": "/usr/bin/python",
-    
+    "python.pythonPath": "/usr/bin/python3",
+
     /*     Java */
     "java.errors.incompleteClasspath.severity": "ignore",
-    
+
     /*     C/C++ */
-    
+
     // Intellisense
     "C_Cpp.intelliSenseEngine": "Default",
-    
+
     /*     Projects */
-    
+
     "gitProjectManager.baseProjectsFolders": [
         "~/Dropbox/PhD/codes",
         "~/Dropbox/PhD/publications/papers",
@@ -375,8 +410,14 @@
         "~/Documents",
         "~/Downloads"
     ],
-    
+
+    /* Arduino */
+
+    "arduino.path": "/home/sriramkrish92/sources/arduino-1.8.9",
+
     /* Misc */
+
+    "git.ignoreLegacyWarning": true,
 
     "explorer.confirmDelete": false,
     "gitlens.currentLine.enabled": false,
@@ -391,6 +432,8 @@
 
     /* Auto completion */
 
+    "editor.suggestSelection": "first",
+
     // Controls if quick suggestions should show up while typing
     // 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting
     // suggestions. The value 'smart' means only accept a suggestion with Enter
@@ -399,7 +442,7 @@
         "comments": true,
         "strings": true
     },
-    
+
     // Controls if suggestions should be accepted on 'Enter' - in addition to
     // when it makes a textual change
     "editor.acceptSuggestionOnEnter": "smart",
@@ -425,13 +468,29 @@
     // Control whether an active snippet prevents quick suggestions.
     "editor.suggest.snippetsPreventQuickSuggestions": false,
 
+    // Show where I am in the code
+    "breadcrumbs.enabled": true,
+
     /* Terminal */
 
-    "terminal.integrated.rendererType": "dom",
+    // "terminal.integrated.rendererType": "dom",
     "terminal.integrated.commandsToSkipShell": [
         // Send quick open's keybinding to the shell
         "-workbench.action.quickOpen",
     ],
+
+    // Remote
+    "remote.SSH.showLoginTerminal": true,
+
+    // Languages
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "python.jediEnabled": false,
 
     /////////
     // Vim //
@@ -711,7 +770,7 @@
                 }
             ]
         },
-        
+
         // multiple cursors - add previous match
         {
             "before": [
@@ -937,7 +996,7 @@
             ]
         },
 
-        
+
         // add file/folder/workspace
         {
             "before": [
@@ -1029,7 +1088,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.terminal.toggleTerminal"
+                    "command": "workbench.action.quickOpenTerm"
                 }
             ]
         },
@@ -1047,7 +1106,7 @@
             ]
         },
 
-        // view files
+        // all views
         {
             "before": [
                 "<leader>","f"
@@ -1171,6 +1230,19 @@
             ]
         },
 
+        // view problems
+        {
+            "before": [
+                "<leader>","l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.actions.view.problems"
+                }
+            ]
+        },
+
         // run task
         {
             "before": [
@@ -1184,7 +1256,7 @@
             ]
         },
 
-        // run code
+        // view explorer
         {
             "before": [
                 "<leader>","n"
@@ -1192,7 +1264,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "code-runner.run"
+                    "command": "workbench.view.explorer"
                 }
             ]
         },
@@ -1510,7 +1582,7 @@
             ]
         },
 
-        // git checkout
+        // gitlens
         {
             "before": [
                 "<leader>","u"
@@ -1518,7 +1590,20 @@
             "after": [],
             "commands": [
                 {
-                    "command": "git.checkout"
+                    "command": "gitlens.views.compare:gitlens.focus"
+                }
+            ]
+        },
+
+        // run code
+        {
+            "before": [
+                "<leader>","v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "code-runner.run"
                 }
             ]
         },
@@ -1537,7 +1622,7 @@
             ]
         },
 
-        // latex actions
+        // Previews
         {
             "before": [
                 "<leader>","x"
@@ -1545,7 +1630,20 @@
             "after": [],
             "commands": [
                 {
-                    "command": "latex-workshop.actions"
+                    "command": "html.showPreviewToSide",
+                    "when": "editorLangId == 'html'"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>","y"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "markdown.extension.togglePreviewToSide",
+                    "when": "editorLangId == 'markdown'"
                 }
             ]
         },
@@ -1858,7 +1956,7 @@
                 }
             ]
         },
-        
+
         // multiple cursors - add previous match
         {
             "before": [
@@ -2164,7 +2262,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.terminal.toggleTerminal"
+                    "command": "workbench.action.quickOpenTerm"
                 }
             ]
         },
@@ -2182,7 +2280,7 @@
             ]
         },
 
-        // view files
+        // all views
         {
             "before": [
                 "<leader>","f"
@@ -2306,6 +2404,19 @@
             ]
         },
 
+        // view problems
+        {
+            "before": [
+                "<leader>","l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.actions.view.problems"
+                }
+            ]
+        },
+
         // run task
         {
             "before": [
@@ -2319,7 +2430,7 @@
             ]
         },
 
-        // run code
+        // view explorer
         {
             "before": [
                 "<leader>","n"
@@ -2327,7 +2438,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "code-runner.run"
+                    "command": "workbench.view.explorer"
                 }
             ]
         },
@@ -2410,7 +2521,7 @@
             ]
         },
 
-        // git checkout
+        // gitlens
         {
             "before": [
                 "<leader>","u"
@@ -2418,7 +2529,20 @@
             "after": [],
             "commands": [
                 {
-                    "command": "git.checkout"
+                    "command": "gitlens.views.compare:gitlens.focus"
+                }
+            ]
+        },
+
+        // run code
+        {
+            "before": [
+                "<leader>","v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "code-runner.run"
                 }
             ]
         },
@@ -2437,7 +2561,7 @@
             ]
         },
 
-        // latex actions
+        // Previews
         {
             "before": [
                 "<leader>","x"
@@ -2445,7 +2569,20 @@
             "after": [],
             "commands": [
                 {
-                    "command": "latex-workshop.actions"
+                    "command": "html.showPreviewToSide",
+                    "when": "editorLangId == 'html'"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>","y"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "markdown.extension.togglePreviewToSide",
+                    "when": "editorLangId == 'markdown'"
                 }
             ]
         },
@@ -2483,7 +2620,6 @@
 
     // other settings
     "markdown.extension.showExplorer": true,
-    "vsicons.projectDetection.autoReload": true,
 
     /* Multiple Command Macros */
 
@@ -2503,7 +2639,7 @@
             },
             "workbench.action.terminal.focus",
         ],
-        
+
         // matlab //
 
         // what is the variable
@@ -2868,5 +3004,5 @@
         ],
 
     },
+    "files.trimTrailingWhitespace": true
 }
-

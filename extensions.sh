@@ -77,3 +77,4 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.auto-close-tag
 code --install-extension ms-python.anaconda-extension-pack
 code --install-extension annsk.alignment
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
