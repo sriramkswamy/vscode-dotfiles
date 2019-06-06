@@ -11,75 +11,47 @@
     },
     // navigate in quick open
     {
-        "key": "ctrl+n",
+        "key": "ctrl+j",
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+shift+n",
+        "key": "ctrl+k",
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
     // suggestions keyboard navigation
     {
-        "key": "ctrl+n",
+        "key": "ctrl+j",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "ctrl+p",
+        "key": "ctrl+k",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    // keybindings navigation
-    {
-        "key": "ctrl+n",
-        "command": "keybindings.editor.focusKeybindings",
-        "when": "inKeybindings && inKeybindingsSearch"
     },
     // history keyboard navigation
     {
-        "key": "ctrl+p",
-        "command": "history.showPrevious",
-        "when": "historyNavigationEnabled && historyNavigationWidget"
-    },
-    {
-        "key": "ctrl+n",
+        "key": "ctrl+j",
         "command": "history.showNext",
         "when": "historyNavigationEnabled && historyNavigationWidget"
     },
-    // notifications keyboard navigation
     {
-        "key": "ctrl+p",
-        "command": "notifications.focusPreviousToast",
-        "when": "notificationFocus && notificationToastsVisible"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "notifications.focusNextToast",
-        "when": "notificationFocus && notificationToastsVisible"
+        "key": "ctrl+k",
+        "command": "history.showPrevious",
+        "when": "historyNavigationEnabled && historyNavigationWidget"
     },
     // list keyboard navigation
     {
-        "key": "ctrl+p",
-        "command": "list.focusUp",
-        "when": "listFocus"
-    },
-    {
-        "key": "ctrl+n",
+        "key": "ctrl+j",
         "command": "list.focusDown",
         "when": "listFocus"
     },
-    // widget keyboard navigation
     {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+        "key": "ctrl+k",
+        "command": "list.focusUp",
+        "when": "listFocus"
     },
     // terminal keyboard navigation
     {
@@ -112,16 +84,16 @@
         "command": "gitlens.diffWithPrevious",
         "when": "editorTextFocus && !isInDiffEditor"
     },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.quickOpen",
-        "when": "!isMac"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.showCommands",
-        "when": "!isMac"
-    },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "workbench.action.quickOpen",
+    //     "when": "!isMac"
+    // },
+    // {
+    //     "key": "ctrl+p",
+    //     "command": "workbench.action.showCommands",
+    //     "when": "!isMac"
+    // },
     // panels
     {
         "key": "ctrl+l",
@@ -139,6 +111,16 @@
         "when": "!isMac"
     },
     // navigate
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateEditorGroups",
+        "when": "editorFocus && !inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "!editorFocus && !inQuickOpen"
+    },
     {
         "key": "ctrl+tab",
         "command": "workbench.action.navigateEditorGroups",
@@ -649,4 +631,3 @@
         "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
 ]
-
