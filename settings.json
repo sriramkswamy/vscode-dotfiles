@@ -55,7 +55,8 @@
     "workbench.statusBar.feedback.visible": false,
 
     // keyboard friendly file launcher
-    "workbench.dialogs.useSimplified": true,
+    "files.simpleDialog.enable": true,
+    "files.trimTrailingWhitespace": true
 
     // Controls if the minimap is shown
     "editor.minimap.enabled": false,
@@ -1207,6 +1208,17 @@
             "commands": [
                 {
                     "command": "editor.action.peekTypeDefinition"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>","i","f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.quickFix"
                 }
             ]
         },
@@ -2384,6 +2396,17 @@
                 }
             ]
         },
+        {
+            "before": [
+                "<leader>","i","f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.quickFix"
+                }
+            ]
+        },
 
         // show all commands
         {
@@ -3012,6 +3035,5 @@
             "workbench.action.terminal.runSelectedText",
         ],
 
-    },
-    "files.trimTrailingWhitespace": true
+    }
 }

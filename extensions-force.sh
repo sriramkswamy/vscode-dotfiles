@@ -78,3 +78,4 @@ code --install-extension formulahendry.auto-close-tag --force
 code --install-extension ms-python.anaconda-extension-pack --force
 code --install-extension annsk.alignment --force
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack --force
+code --install-extension GitHub.vscode-pull-request-github --force

@@ -53,6 +53,17 @@
         "command": "list.focusUp",
         "when": "listFocus"
     },
+    // parameter hints keyboard navigation
+    {
+        "key": "ctrl+j",
+        "command": "showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && !inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && !inQuickOpen"
+    },
     // terminal keyboard navigation
     {
         "key": "ctrl+w",
