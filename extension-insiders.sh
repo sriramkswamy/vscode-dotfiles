@@ -79,3 +79,5 @@ code-insiders --install-extension ms-python.anaconda-extension-pack
 code-insiders --install-extension annsk.alignment
 code-insiders --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code-insiders --install-extension GitHub.vscode-pull-request-github
+code-insiders --install-extension vscode-org-mode.org-mode
+code-insiders --install-extension Ikuyadeu.r-pack

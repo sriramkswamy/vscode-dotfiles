@@ -79,3 +79,5 @@ code --install-extension ms-python.anaconda-extension-pack --force
 code --install-extension annsk.alignment --force
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack --force
 code --install-extension GitHub.vscode-pull-request-github --force
+code --install-extension vscode-org-mode.org-mode --force
+code --install-extension Ikuyadeu.r-pack --force
