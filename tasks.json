@@ -25,5 +25,21 @@
                 "panel": "new"
             }
         },
+
+        // R markdown
+        {
+            "label": "R Markdown PDF",
+            "type": "shell",
+            "command": "R",
+            "args": [
+                "-q",
+                "-e",
+                "rmarkdown::render(input=\"${fileBasename}\", output_format=\"pdf_document\", output_file=\"${fileBasenameNoExtension}.pdf\")"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": []
+        }
     ]
 }

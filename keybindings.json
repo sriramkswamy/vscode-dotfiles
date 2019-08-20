@@ -3,12 +3,14 @@
     //------------------//
     // VS Code commands //
     //------------------//
+
     // open link
     {
         "key": "ctrl+enter",
         "command": "editor.action.openLink",
         "when": "editorTextFocus && vim.mode != 'Insert'"
     },
+
     // navigate in quick open
     {
         "key": "ctrl+j",
@@ -20,6 +22,7 @@
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
+
     // suggestions keyboard navigation
     {
         "key": "ctrl+j",
@@ -31,6 +34,7 @@
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+
     // history keyboard navigation
     {
         "key": "ctrl+j",
@@ -42,6 +46,7 @@
         "command": "history.showPrevious",
         "when": "historyNavigationEnabled && historyNavigationWidget"
     },
+
     // list keyboard navigation
     {
         "key": "ctrl+j",
@@ -53,6 +58,31 @@
         "command": "list.focusUp",
         "when": "listFocus"
     },
+
+    // breadcrumbs navigation
+    {
+        "key": "ctrl+j",
+        "command": "breadcrumbs.focusNext",
+        "when": "breadcrumbsActive && breadcrumbsVisible && !inQuickpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "breadcrumbs.focusPrevious",
+        "when": "breadcrumbsActive && breadcrumbsVisible && !inQuickpen"
+    },
+
+    // notifications navigation
+    {
+        "key": "ctrl+j",
+        "command": "notifications.focusNextToast",
+        "when": "notificationFocus && notificationToastsVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "notifications.focusPreviousToast",
+        "when": "notificationFocus && notificationToastsVisible"
+    },
+
     // parameter hints keyboard navigation
     {
         "key": "ctrl+j",
@@ -64,6 +94,29 @@
         "command": "showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && !inQuickOpen"
     },
+
+    // autocompletion navigation
+    {
+        "key": "ctrl+j",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && !inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "insertBestCompletion",
+        "when": "atEndOfWord && !hasOtherSuggestions && !inQuickOpen && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "insertNextSuggestion",
+        "when": "hasOtherSuggestions && textInputFocus && !inQuickOpen && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "insertPrevSuggestion",
+        "when": "hasOtherSuggestions && textInputFocus && !inQuickOpen && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+    },
+
     // terminal keyboard navigation
     {
         "key": "ctrl+w",
@@ -80,58 +133,18 @@
         "command": "cursorRight",
         "when": "terminalFocus"
     },
-    // commands
-    {
-        "key": "ctrl+e",
-        "command": "workbench.action.openRecent",
-        "when": "!isMac"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "gitlens.diffWithPrevious",
-        "when": "editorTextFocus && !isInDiffEditor"
-    },
+
+    // navigate
     // {
     //     "key": "ctrl+j",
-    //     "command": "workbench.action.quickOpen",
-    //     "when": "!isMac"
+    //     "command": "workbench.action.navigateEditorGroups",
+    //     "when": "editorFocus && !inQuickOpen"
     // },
     // {
-    //     "key": "ctrl+p",
-    //     "command": "workbench.action.showCommands",
-    //     "when": "!isMac"
+    //     "key": "ctrl+j",
+    //     "command": "workbench.action.focusLastEditorGroup",
+    //     "when": "!editorFocus && !inQuickOpen"
     // },
-    // panels
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.togglePanel",
-        "when": "!isMac"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!isMac"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!isMac"
-    },
-    // navigate
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.navigateEditorGroups",
-        "when": "editorFocus && !inQuickOpen"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.focusLastEditorGroup",
-        "when": "!editorFocus && !inQuickOpen"
-    },
     {
         "key": "ctrl+tab",
         "command": "workbench.action.navigateEditorGroups",
@@ -152,6 +165,7 @@
         "command": "workbench.action.focusLastEditorGroup",
         "when": "!editorFocus"
     },
+
     // vim
     {
         "key": "ctrl+a",
@@ -183,10 +197,57 @@
         "command": "editor.action.triggerParameterHints",
         "when": "editorTextFocus && !editorReadonly && vim.mode == 'Insert'"
     },
+
+    // commands
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.openRecent",
+        "when": "isLinux"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine",
+        "when": "isLinux"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "gitlens.diffWithPrevious",
+        "when": "isLinux && editorTextFocus && !isInDiffEditor"
+    },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "workbench.action.quickOpen",
+    //     "when": "isLinux"
+    // },
+    // {
+    //     "key": "ctrl+p",
+    //     "command": "workbench.action.showCommands",
+    //     "when": "isLinux"
+    // },
+
+    // panels
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.togglePanel",
+        "when": "isLinux"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isLinux"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "isLinux"
+    },
+
     //-------------------//
     // Terminal commands //
     //-------------------//
+
     // common //
+
     // send ctrl-c
     {
         "key": "ctrl+m x",
@@ -194,8 +255,9 @@
         "args": {
             "text": "\u0003",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert'"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert'"
     },
+
     // list all files
     {
         "key": "ctrl+m l",
@@ -203,33 +265,39 @@
         "args": {
             "text": "ls\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert'"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert'"
     },
+
     // matlab macros //
+
     // add path of variable under cursor
     {
         "key": "ctrl+m a",
         "command": "macros.matlabSendAddpathAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // add path of selected variable
     {
         "key": "ctrl+m a",
         "command": "macros.matlabSendAddpathAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // add general path of variable under cursor
     {
         "key": "ctrl+m shift+a",
         "command": "macros.matlabSendGenpathAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // add general path of selected variable
     {
         "key": "ctrl+m shift+a",
         "command": "macros.matlabSendGenpathAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint set
     {
         "key": "ctrl+m b",
@@ -237,8 +305,9 @@
         "args": {
             "text": "dbstop in ${fileBasename} at ${lineNumber}\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint set
     {
         "key": "ctrl+m b",
@@ -246,8 +315,9 @@
         "args": {
             "text": "dbstop in ${fileBasename} at ${lineNumber}\r",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint remove
     {
         "key": "ctrl+m shift+b",
@@ -255,8 +325,9 @@
         "args": {
             "text": "dbclear in ${fileBasename} at ${lineNumber}\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint remove
     {
         "key": "ctrl+m shift+b",
@@ -264,8 +335,9 @@
         "args": {
             "text": "dbclear in ${fileBasename} at ${lineNumber}\r",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // clear screen
     {
         "key": "ctrl+m c",
@@ -273,8 +345,9 @@
         "args": {
             "text": "clc\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // close all windows other than the main window
     {
         "key": "ctrl+m shift+c",
@@ -282,44 +355,51 @@
         "args": {
             "text": "close all\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get dimensions of variable under cursor
     {
         "key": "ctrl+m d",
         "command": "macros.matlabSendDimAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get dimensions of selected variable
     {
         "key": "ctrl+m d",
         "command": "macros.matlabSendDimAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get standard deviation of variable under cursor
     {
         "key": "ctrl+m shift+d",
         "command": "macros.matlabSendStddevAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get standard deviation of selected variable
     {
         "key": "ctrl+m shift+d",
         "command": "macros.matlabSendStddevAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // edit file under cursor
     {
         "key": "ctrl+m e",
         "command": "macros.matlabSendEditAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // edit selected file
     {
         "key": "ctrl+m e",
         "command": "macros.matlabSendEditAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint on error
     {
         "key": "ctrl+m shift+e",
@@ -327,8 +407,9 @@
         "args": {
             "text": "dbstop on error\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint on error
     {
         "key": "ctrl+m shift+e",
@@ -336,20 +417,23 @@
         "args": {
             "text": "dbstop on error\r",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get fieldnames of variable under cursor
     {
         "key": "ctrl+m f",
         "command": "macros.matlabSendFieldnamesAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get fieldnames of selected variable
     {
         "key": "ctrl+m f",
         "command": "macros.matlabSendFieldnamesAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // check workspace gui
     {
         "key": "ctrl+m g",
@@ -357,8 +441,9 @@
         "args": {
             "text": "workspace\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // check workspace gui
     {
         "key": "ctrl+m g",
@@ -366,32 +451,37 @@
         "args": {
             "text": "workspace\r",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get help of variable under cursor
     {
         "key": "ctrl+m h",
         "command": "macros.matlabSendHelpAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get help of selected variable
     {
         "key": "ctrl+m h",
         "command": "macros.matlabSendHelpAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get documentation of variable under cursor
     {
         "key": "ctrl+m shift+h",
         "command": "macros.matlabSendDocAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get documentation of selected variable
     {
         "key": "ctrl+m shift+h",
         "command": "macros.matlabSendDocAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // conditional breakpoint set
     {
         "key": "ctrl+m i",
@@ -399,8 +489,9 @@
         "args": {
             "text": "dbstop in ${fileBasename} at ${lineNumber} if ",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // conditional breakpoint set
     {
         "key": "ctrl+m i",
@@ -408,8 +499,9 @@
         "args": {
             "text": "dbstop in ${fileBasename} at ${lineNumber} if ",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // global conditional breakpoint set
     {
         "key": "ctrl+m shift+i",
@@ -417,8 +509,9 @@
         "args": {
             "text": "dbstop if ",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // global conditional breakpoint set
     {
         "key": "ctrl+m shift+i",
@@ -426,20 +519,23 @@
         "args": {
             "text": "dbstop if ",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // open variable under cursor
     {
         "key": "ctrl+m j",
         "command": "macros.matlabSendOpenvarAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // open selected variable
     {
         "key": "ctrl+m j",
         "command": "macros.matlabSendOpenvarAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint kill all
     {
         "key": "ctrl+m k",
@@ -447,8 +543,9 @@
         "args": {
             "text": "dbclear all\n",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint kill all
     {
         "key": "ctrl+m k",
@@ -456,8 +553,9 @@
         "args": {
             "text": "dbclear all\n",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // debugging quit
     {
         "key": "ctrl+m shift+k",
@@ -465,8 +563,9 @@
         "args": {
             "text": "dbquit\n",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // debugging quit
     {
         "key": "ctrl+m shift+k",
@@ -474,80 +573,93 @@
         "args": {
             "text": "dbquit\n",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get length of variable under cursor
     {
         "key": "ctrl+m l",
         "command": "macros.matlabSendLengthAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get length of selected variable
     {
         "key": "ctrl+m l",
         "command": "macros.matlabSendLengthAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get mean of variable under cursor
     {
         "key": "ctrl+m m",
         "command": "macros.matlabSendMeanAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get mean of selected variable
     {
         "key": "ctrl+m m",
         "command": "macros.matlabSendMeanAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get variance of variable under cursor
     {
         "key": "ctrl+m shift+m",
         "command": "macros.matlabSendVarianceAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get variance of selected variable
     {
         "key": "ctrl+m shift+m",
         "command": "macros.matlabSendVarianceAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get number of elements of variable under cursor
     {
         "key": "ctrl+m n",
         "command": "macros.matlabSendNumelAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get number of elements of selected variable
     {
         "key": "ctrl+m n",
         "command": "macros.matlabSendNumelAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // plot of variable under cursor
     {
         "key": "ctrl+m p",
         "command": "macros.matlabSendPlotAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // plot of selected variable
     {
         "key": "ctrl+m p",
         "command": "macros.matlabSendPlotAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // mesh plot of variable under cursor
     {
         "key": "ctrl+m shift+p",
         "command": "macros.matlabSendMeshplotAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // mesh plot of selected variable
     {
         "key": "ctrl+m shift+p",
         "command": "macros.matlabSendMeshplotAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // run matlab in terminal
     {
         "key": "ctrl+m r",
@@ -555,8 +667,9 @@
         "args": {
             "text": "matlab -nodesktop -nosplash\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // run matlab desktop
     {
         "key": "ctrl+m shift+r",
@@ -564,44 +677,51 @@
         "args": {
             "text": "matlab\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get sum of variable under cursor
     {
         "key": "ctrl+m s",
         "command": "macros.matlabSendSumAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get sum of selected variable
     {
         "key": "ctrl+m s",
         "command": "macros.matlabSendSumAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get cumulative sum of variable under cursor
     {
         "key": "ctrl+m shift+s",
         "command": "macros.matlabSendCumsumAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get cumulative sum of selected variable
     {
         "key": "ctrl+m shift+s",
         "command": "macros.matlabSendCumsumAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // check workspace variable under cursor
     {
         "key": "ctrl+m w",
         "command": "macros.matlabSendWhosAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // check selected workspace variable
     {
         "key": "ctrl+m w",
         "command": "macros.matlabSendWhosAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint on warning
     {
         "key": "ctrl+m shift+w",
@@ -609,8 +729,9 @@
         "args": {
             "text": "dbstop on warning\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // breakpoint on warning
     {
         "key": "ctrl+m shift+w",
@@ -618,8 +739,9 @@
         "args": {
             "text": "dbstop on warning\r",
         },
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // clear workspace
     {
         "key": "ctrl+m shift+x",
@@ -627,18 +749,590 @@
         "args": {
             "text": "clear all\r",
         },
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get size of variable under cursor
     {
         "key": "ctrl+m z",
         "command": "macros.matlabSendSizeAndWordNormal",
-        "when": "!isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
+
     // get size of selected variable
     {
         "key": "ctrl+m z",
         "command": "macros.matlabSendSizeAndWordVisual",
-        "when": "!isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+        "when": "isLinux && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // Mac Specific Bindings //
+
+    // commands
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.openRecent",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+g",
+        "command": "-workbench.action.gotoLine",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+g",
+        "command": "gitlens.diffWithPrevious",
+        "when": "isMac && editorTextFocus && !isInDiffEditor"
+    },
+    // {
+    //     "key": "cmd+j",
+    //     "command": "workbench.action.quickOpen",
+    //     "when": "isMac"
+    // },
+    // {
+    //     "key": "cmd+p",
+    //     "command": "workbench.action.showCommands",
+    //     "when": "isMac"
+    // },
+
+    // panels
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.togglePanel",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+i",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "isMac"
+    },
+
+    //-------------------//
+    // Terminal commands //
+    //-------------------//
+
+    // common //
+
+    // send ctrl-c
+    {
+        "key": "cmd+m x",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0003",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert'"
+    },
+
+    // list all files
+    {
+        "key": "cmd+m l",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "ls\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert'"
+    },
+
+    // matlab macros //
+
+    // add path of variable under cursor
+    {
+        "key": "cmd+m a",
+        "command": "macros.matlabSendAddpathAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // add path of selected variable
+    {
+        "key": "cmd+m a",
+        "command": "macros.matlabSendAddpathAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // add general path of variable under cursor
+    {
+        "key": "cmd+m shift+a",
+        "command": "macros.matlabSendGenpathAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // add general path of selected variable
+    {
+        "key": "cmd+m shift+a",
+        "command": "macros.matlabSendGenpathAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint set
+    {
+        "key": "cmd+m b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop in ${fileBasename} at ${lineNumber}\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint set
+    {
+        "key": "cmd+m b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop in ${fileBasename} at ${lineNumber}\r",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint remove
+    {
+        "key": "cmd+m shift+b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbclear in ${fileBasename} at ${lineNumber}\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint remove
+    {
+        "key": "cmd+m shift+b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbclear in ${fileBasename} at ${lineNumber}\r",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // clear screen
+    {
+        "key": "cmd+m c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "clc\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // close all windows other than the main window
+    {
+        "key": "cmd+m shift+c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "close all\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get dimensions of variable under cursor
+    {
+        "key": "cmd+m d",
+        "command": "macros.matlabSendDimAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get dimensions of selected variable
+    {
+        "key": "cmd+m d",
+        "command": "macros.matlabSendDimAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get standard deviation of variable under cursor
+    {
+        "key": "cmd+m shift+d",
+        "command": "macros.matlabSendStddevAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get standard deviation of selected variable
+    {
+        "key": "cmd+m shift+d",
+        "command": "macros.matlabSendStddevAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // edit file under cursor
+    {
+        "key": "cmd+m e",
+        "command": "macros.matlabSendEditAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // edit selected file
+    {
+        "key": "cmd+m e",
+        "command": "macros.matlabSendEditAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint on error
+    {
+        "key": "cmd+m shift+e",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop on error\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint on error
+    {
+        "key": "cmd+m shift+e",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop on error\r",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get fieldnames of variable under cursor
+    {
+        "key": "cmd+m f",
+        "command": "macros.matlabSendFieldnamesAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get fieldnames of selected variable
+    {
+        "key": "cmd+m f",
+        "command": "macros.matlabSendFieldnamesAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // check workspace gui
+    {
+        "key": "cmd+m g",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "workspace\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // check workspace gui
+    {
+        "key": "cmd+m g",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "workspace\r",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get help of variable under cursor
+    {
+        "key": "cmd+m h",
+        "command": "macros.matlabSendHelpAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get help of selected variable
+    {
+        "key": "cmd+m h",
+        "command": "macros.matlabSendHelpAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get documentation of variable under cursor
+    {
+        "key": "cmd+m shift+h",
+        "command": "macros.matlabSendDocAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get documentation of selected variable
+    {
+        "key": "cmd+m shift+h",
+        "command": "macros.matlabSendDocAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // conditional breakpoint set
+    {
+        "key": "cmd+m i",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop in ${fileBasename} at ${lineNumber} if ",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // conditional breakpoint set
+    {
+        "key": "cmd+m i",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop in ${fileBasename} at ${lineNumber} if ",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // global conditional breakpoint set
+    {
+        "key": "cmd+m shift+i",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop if ",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // global conditional breakpoint set
+    {
+        "key": "cmd+m shift+i",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop if ",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // open variable under cursor
+    {
+        "key": "cmd+m j",
+        "command": "macros.matlabSendOpenvarAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // open selected variable
+    {
+        "key": "cmd+m j",
+        "command": "macros.matlabSendOpenvarAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint kill all
+    {
+        "key": "cmd+m k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbclear all\n",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint kill all
+    {
+        "key": "cmd+m k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbclear all\n",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // debugging quit
+    {
+        "key": "cmd+m shift+k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbquit\n",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // debugging quit
+    {
+        "key": "cmd+m shift+k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbquit\n",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get length of variable under cursor
+    {
+        "key": "cmd+m l",
+        "command": "macros.matlabSendLengthAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get length of selected variable
+    {
+        "key": "cmd+m l",
+        "command": "macros.matlabSendLengthAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get mean of variable under cursor
+    {
+        "key": "cmd+m m",
+        "command": "macros.matlabSendMeanAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get mean of selected variable
+    {
+        "key": "cmd+m m",
+        "command": "macros.matlabSendMeanAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get variance of variable under cursor
+    {
+        "key": "cmd+m shift+m",
+        "command": "macros.matlabSendVarianceAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get variance of selected variable
+    {
+        "key": "cmd+m shift+m",
+        "command": "macros.matlabSendVarianceAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get number of elements of variable under cursor
+    {
+        "key": "cmd+m n",
+        "command": "macros.matlabSendNumelAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get number of elements of selected variable
+    {
+        "key": "cmd+m n",
+        "command": "macros.matlabSendNumelAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // plot of variable under cursor
+    {
+        "key": "cmd+m p",
+        "command": "macros.matlabSendPlotAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // plot of selected variable
+    {
+        "key": "cmd+m p",
+        "command": "macros.matlabSendPlotAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // mesh plot of variable under cursor
+    {
+        "key": "cmd+m shift+p",
+        "command": "macros.matlabSendMeshplotAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // mesh plot of selected variable
+    {
+        "key": "cmd+m shift+p",
+        "command": "macros.matlabSendMeshplotAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // run matlab in terminal
+    {
+        "key": "cmd+m r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "matlab -nodesktop -nosplash\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // run matlab desktop
+    {
+        "key": "cmd+m shift+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "matlab\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get sum of variable under cursor
+    {
+        "key": "cmd+m s",
+        "command": "macros.matlabSendSumAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get sum of selected variable
+    {
+        "key": "cmd+m s",
+        "command": "macros.matlabSendSumAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get cumulative sum of variable under cursor
+    {
+        "key": "cmd+m shift+s",
+        "command": "macros.matlabSendCumsumAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get cumulative sum of selected variable
+    {
+        "key": "cmd+m shift+s",
+        "command": "macros.matlabSendCumsumAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // check workspace variable under cursor
+    {
+        "key": "cmd+m w",
+        "command": "macros.matlabSendWhosAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // check selected workspace variable
+    {
+        "key": "cmd+m w",
+        "command": "macros.matlabSendWhosAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint on warning
+    {
+        "key": "cmd+m shift+w",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop on warning\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // breakpoint on warning
+    {
+        "key": "cmd+m shift+w",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "dbstop on warning\r",
+        },
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // clear workspace
+    {
+        "key": "cmd+m shift+x",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "clear all\r",
+        },
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get size of variable under cursor
+    {
+        "key": "cmd+m z",
+        "command": "macros.matlabSendSizeAndWordNormal",
+        "when": "isMac && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
+
+    // get size of selected variable
+    {
+        "key": "cmd+m z",
+        "command": "macros.matlabSendSizeAndWordVisual",
+        "when": "isMac && editorHasSelection && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
     },
 ]

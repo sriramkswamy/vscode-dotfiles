@@ -56,7 +56,6 @@
 
     // keyboard friendly file launcher
     "files.simpleDialog.enable": true,
-    "files.trimTrailingWhitespace": true
 
     // Controls if the minimap is shown
     "editor.minimap.enabled": false,
@@ -65,8 +64,8 @@
     // Use multiple values for multiple rulers. No rulers are drawn if array is
     // empty
     "editor.rulers": [
-        79,
-        99
+        80,
+        100
     ],
 
     // smooth cursors
@@ -101,7 +100,7 @@
     "window.restoreWindows": "none",
 
     // Controls the font size in pixels.
-    "editor.fontSize": 12.5,
+    "editor.fontSize": 13,
 
     // Controls the font family.
     "editor.fontFamily": "Fira Code, Monaco, Menlo, monospace",
@@ -214,6 +213,13 @@
         "**/*.pdf": true,
         "**/*.jpg": true,
         "**/*.eps": true,
+        "**/*.mp4": true,
+        "**/*.mp3": true,
+        "**/*.mkv": true,
+        "**/*.flv": true,
+        "**/*.gdoc": true,
+        "**/*.gsheet": true,
+        "**/*.gslide": true,
         "**/*.ezdraw": true
     },
 
@@ -247,6 +253,13 @@
         "**/*.pdf": true,
         "**/*.jpg": true,
         "**/*.eps": true,
+        "**/*.mp4": true,
+        "**/*.mp3": true,
+        "**/*.mkv": true,
+        "**/*.flv": true,
+        "**/*.gdoc": true,
+        "**/*.gsheet": true,
+        "**/*.gslide": true,
         "**/*.ezdraw": true
     },
 
@@ -366,7 +379,7 @@
         "frame"
     ],
 
-    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.outDir": "./build/",
     "latex-workshop.chktex.enabled": true,
@@ -380,6 +393,7 @@
     /* Files */
 
     // Associate all .m files to MATLAB
+    "files.trimTrailingWhitespace": true,
     "files.associations": {
         "*.m": "matlab",
         "*.el": "lisp"
@@ -389,7 +403,14 @@
 
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv,
     // ~/Envs, ~/.virtualenvs).
-    "python.venvPath": "~/venv",
+    "python.venvPath": "~/.virtualenvs",
+    "python.venvFolders": [
+        "~/.virtualenvs",
+        "${workspaceFolder}",
+        "${rootFolder}",
+        "~/venv",
+        "~/.pyenv",
+    ],
 
     // Executable path
     "python.pythonPath": "/usr/bin/python3",
@@ -485,14 +506,22 @@
 
     // Languages
 
+    "r.lsp.path": "/usr/bin/R",
+
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
 
     "[json]": {
         "editor.quickSuggestions": true
     },
 
     "[markdown]": {
+        "files.insertFinalNewline": true,
         "editor.wordWrap": "on",
+        "editor.tabSize": 2,
         "editor.quickSuggestions": true
     },
 
@@ -511,6 +540,8 @@
     "vim.visualstar": true,
     "vim.hlsearch": false,
     "vim.leader": "<Space>",
+    // this is a weird quirk
+	"vim.textwidth": 82,
 
     // normal mode bindings //
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -729,15 +760,509 @@
             ]
         },
 
+        // search for things
+        {
+            "before": [
+                "g","s","s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","w"
+            ],
+            "after": [
+                "v","i","w"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","W"
+            ],
+            "after": [
+                "v","i","W"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","p"
+            ],
+            "after": [
+                "v","i","p"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","["
+            ],
+            "after": [
+                "v","i","["
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","]"
+            ],
+            "after": [
+                "v","i","]"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","{"
+            ],
+            "after": [
+                "v","i","{"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","}"
+            ],
+            "after": [
+                "v","i","}"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i","("
+            ],
+            "after": [
+                "v","i","("
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","i",")"
+            ],
+            "after": [
+                "v","i",")"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","w"
+            ],
+            "after": [
+                "v","a","w"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","W"
+            ],
+            "after": [
+                "v","a","W"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","p"
+            ],
+            "after": [
+                "v","a","p"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","("
+            ],
+            "after": [
+                "v","a","("
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a",")"
+            ],
+            "after": [
+                "v","a",")"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","["
+            ],
+            "after": [
+                "v","a","["
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","]"
+            ],
+            "after": [
+                "v","a","]"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","{"
+            ],
+            "after": [
+                "v","a","{"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","s","a","}"
+            ],
+            "after": [
+                "v","a","}"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+
         // multiple cursors - change all
         {
             "before": [
-                "g","w"
+                "g","w","w"
             ],
             "after": [],
             "commands": [
                 {
                     "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","w"
+            ],
+            "after": [
+                "v","i","w"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","W"
+            ],
+            "after": [
+                "v","i","W"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","p"
+            ],
+            "after": [
+                "v","i","p"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","["
+            ],
+            "after": [
+                "v","i","["
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","]"
+            ],
+            "after": [
+                "v","i","]"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","{"
+            ],
+            "after": [
+                "v","i","{"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","}"
+            ],
+            "after": [
+                "v","i","}"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i","("
+            ],
+            "after": [
+                "v","i","("
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","i",")"
+            ],
+            "after": [
+                "v","i",")"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","w"
+            ],
+            "after": [
+                "v","a","w"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","W"
+            ],
+            "after": [
+                "v","a","W"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","p"
+            ],
+            "after": [
+                "v","a","p"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","("
+            ],
+            "after": [
+                "v","a","("
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a",")"
+            ],
+            "after": [
+                "v","a",")"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","["
+            ],
+            "after": [
+                "v","a","["
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","]"
+            ],
+            "after": [
+                "v","a","]"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","{"
+            ],
+            "after": [
+                "v","a","{"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g","w","a","}"
+            ],
+            "after": [
+                "v","a","}"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.changeAll"
+                }
+            ]
+        },
+
+        // rename file
+        {
+            "before": [
+                "g", "F"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.rename"
                 }
             ]
         },
@@ -794,10 +1319,32 @@
             ]
         },
 
-        // latex sync
+        // latex bindings
         {
             "before": [
-                "m"
+                "m", "x"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.build"
+                }
+            ]
+        },
+        {
+            "before": [
+                "m", "v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.view"
+                }
+            ]
+        },
+        {
+            "before": [
+                "m", "j"
             ],
             "after": [],
             "commands": [
@@ -1099,6 +1646,19 @@
             "commands": [
                 {
                     "command": "workbench.action.quickOpenTerm"
+                }
+            ]
+        },
+
+        // explore magit
+        {
+            "before": [
+                "<leader>","E"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "terminalOpenGit"
                 }
             ]
         },
@@ -1926,6 +2486,19 @@
             ]
         },
 
+        // search for things
+        {
+            "before": [
+                "g","s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+
         // multiple cursors - change all
         {
             "before": [
@@ -1935,6 +2508,19 @@
             "commands": [
                 {
                     "command": "editor.action.changeAll"
+                }
+            ]
+        },
+
+        // rename file
+        {
+            "before": [
+                "g", "F"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.rename"
                 }
             ]
         },
@@ -1991,10 +2577,32 @@
             ]
         },
 
-        // latex sync
+        // latex bindings
         {
             "before": [
-                "m"
+                "m", "x"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.build"
+                }
+            ]
+        },
+        {
+            "before": [
+                "m", "v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "latex-workshop.view"
+                }
+            ]
+        },
+        {
+            "before": [
+                "m", "v"
             ],
             "after": [],
             "commands": [
@@ -2288,7 +2896,20 @@
             ]
         },
 
-        // explore git using tig
+        // explore magit
+        {
+            "before": [
+                "<leader>","E"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "terminalOpenGit"
+                }
+            ]
+        },
+
+        // explore git
         {
             "before": [
                 "<leader>","e"
@@ -2296,7 +2917,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "macros.terminalOpenTig"
+                    "command": "workbench.view.scm"
                 }
             ]
         },
@@ -2540,6 +3161,7 @@
                 }
             ]
         },
+
         // outline
         {
             "before": [
@@ -2665,11 +3287,12 @@
             {
                 "command": "workbench.action.terminal.sendSequence",
                 "args": {
-                    "text": "emacs -nw -e (magit-status)\r"
+                    // "text": "magit.sh\r"
                     // "text": "tig\r"
+                    "text": "smerge .\r"
                 }
             },
-            "workbench.action.terminal.focus",
+            "workbench.action.terminal.focus"
         ],
 
         // matlab //
@@ -3035,5 +3658,10 @@
             "workbench.action.terminal.runSelectedText",
         ],
 
-    }
+    },
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.showCommentDescription": true,
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "sync.forceUpload": true,
 }
