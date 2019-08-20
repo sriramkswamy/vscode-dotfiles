@@ -81,3 +81,4 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension vscode-org-mode.org-mode
 code --install-extension Ikuyadeu.r-pack
+code --install-extension shengchen.vscode-leetcode
