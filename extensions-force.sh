@@ -82,3 +82,4 @@ code --install-extension GitHub.vscode-pull-request-github --force
 code --install-extension vscode-org-mode.org-mode --force
 code --install-extension Ikuyadeu.r-pack --force
 code --install-extension shengchen.vscode-leetcode --force
+code --install-extension fabiospampinato.vscode-open-in-application --force
