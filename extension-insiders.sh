@@ -82,4 +82,3 @@ code-insiders --install-extension GitHub.vscode-pull-request-github
 code-insiders --install-extension vscode-org-mode.org-mode
 code-insiders --install-extension Ikuyadeu.r-pack
 code-insiders --install-extension shengchen.vscode-leetcode
-code-insiders --install-extension fabiospampinato vscode-open-in-application

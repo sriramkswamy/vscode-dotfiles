@@ -211,14 +211,9 @@
     },
     {
         "key": "ctrl+g",
-        "command": "gitlens.diffWithPrevious",
+        "command": "workbench.view.scm",
         "when": "isLinux && editorTextFocus && !isInDiffEditor"
     },
-    // {
-    //     "key": "ctrl+j",
-    //     "command": "workbench.action.quickOpen",
-    //     "when": "isLinux"
-    // },
     // {
     //     "key": "ctrl+p",
     //     "command": "workbench.action.showCommands",
@@ -248,6 +243,13 @@
 
     // common //
 
+    // run active file
+    {
+        "key": "ctrl+m ctrl+m",
+        "command": "workbench.action.terminal.runActiveFile",
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert'"
+    },
+
     // send ctrl-c
     {
         "key": "ctrl+m x",
@@ -269,6 +271,13 @@
     },
 
     // matlab macros //
+
+    // run current file
+    {
+        "key": "ctrl+m ctrl+m",
+        "command": "macros.matlabRunCurrentFile",
+        "when": "isLinux && editorTextFocus && vim.mode != 'Insert' && resourceExtname == .m"
+    },
 
     // add path of variable under cursor
     {

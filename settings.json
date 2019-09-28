@@ -40,12 +40,12 @@
     "window.menuBarVisibility": "toggle",
 
     // theme
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "One Dark Pro",
 
     // Controls how the editor should render whitespace characters, possibilities
     // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
     // single spaces between words.
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "boundary",
 
     // Controls the visibility of the activity bar in the workbench.
     "workbench.activityBar.visible": false,
@@ -326,21 +326,19 @@
     "latex-workshop.latex.autoBuild.run": "onFileChange",
     "latex-workshop.view.pdf.invert": 0.85,
     "latex-workshop.view.pdf.tab.useNewGroup": true,
+
+    // external viewer
     "latex-workshop.view.pdf.ref.viewer": "external",
-    "latex-workshop.view.pdf.external.command": {
-        "command": "evince",
-        "args": [
-            "%PDF%"
-        ]
-    },
-    "latex-workshop.view.pdf.external.synctex": {
-        "command": "evince_forward_search",
-        "args": [
-            "%PDF%",
-            "%LINE%",
-            "%TEX%"
-        ]
-    },
+    "latex-workshop.view.pdf.external.viewer.command": "evince2",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "evince_forward_search",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "%PDF%",
+        "%LINE%",
+        "%TEX%"
+    ],
 
     // Files to clean.
     // This property must be an array of strings. File globs such as *.removeme, something?.aux can be used.
@@ -530,6 +528,18 @@
     },
 
     "python.jediEnabled": false,
+
+    // open in other applications
+    "openInApplication.applications": {
+        "pdf": [
+            "evince",
+            "mupdf",
+            "skim"
+        ],
+        "sh": [
+            "smerge"
+        ]
+    },
 
     /////////
     // Vim //
@@ -1650,19 +1660,6 @@
             ]
         },
 
-        // explore magit
-        {
-            "before": [
-                "<leader>","E"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "terminalOpenGit"
-                }
-            ]
-        },
-
         // explore git
         {
             "before": [
@@ -1671,7 +1668,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.view.scm"
+                    "command": "macros.terminalOpenGit"
                 }
             ]
         },
@@ -2896,20 +2893,7 @@
             ]
         },
 
-        // explore magit
-        {
-            "before": [
-                "<leader>","E"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "terminalOpenGit"
-                }
-            ]
-        },
-
-        // explore git
+        // explore git using tig
         {
             "before": [
                 "<leader>","e"
@@ -2917,7 +2901,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.view.scm"
+                    "command": "macros.terminalOpenGit"
                 }
             ]
         },
@@ -3279,24 +3263,40 @@
 
     "macros": {
 
-        // common //
+        // git
 
-        // open tig/magit
-        "terminalOpenGit": [
-            "workbench.action.terminal.new",
-            {
+        // open the current file
+        "terminalOpenGit": [{
                 "command": "workbench.action.terminal.sendSequence",
                 "args": {
-                    // "text": "magit.sh\r"
-                    // "text": "tig\r"
-                    "text": "smerge .\r"
+                    "text": "smerge "
                 }
             },
-            "workbench.action.terminal.focus"
+            "workbench.action.terminal.runActiveFile",
         ],
 
         // matlab //
 
+        // run the current file
+        "matlabRunCurrentFile": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "run "
+                }
+            },
+            "workbench.action.terminal.runActiveFile",
+        ],
+
+        // what is the variable
+        "matlabSendWhosAndWordNormal": [{
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "whos "
+                }
+            },
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.terminal.runSelectedText",
+        ],
         // what is the variable
         "matlabSendWhosAndWordNormal": [{
                 "command": "workbench.action.terminal.sendSequence",
