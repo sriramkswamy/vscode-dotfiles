@@ -40,7 +40,7 @@
     "window.menuBarVisibility": "toggle",
 
     // theme
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
 
     // Controls how the editor should render whitespace characters, possibilities
     // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
@@ -323,11 +323,19 @@
     /* LaTeX */
 
     "latex-workshop.latex.autoClean.run": "onBuilt",
-    "latex-workshop.latex.autoBuild.run": "onFileChange",
-    "latex-workshop.view.pdf.invert": 0.85,
+    "latex-workshop.latex.autoBuild.run": "never" ,
     "latex-workshop.view.pdf.tab.useNewGroup": true,
 
+    // // internal viewer
+    // "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+    // "latex-workshop.view.pdf.viewer": "tab",
+
+    // internal viewer color
+    // "latex-workshop.view.pdf.invert": 0,
+    "latex-workshop.view.pdf.invert": 0.85,
+
     // external viewer
+    "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.view.pdf.ref.viewer": "external",
     "latex-workshop.view.pdf.external.viewer.command": "evince2",
     "latex-workshop.view.pdf.external.viewer.args": [
@@ -377,7 +385,6 @@
         "frame"
     ],
 
-    "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.outDir": "./build/",
     "latex-workshop.chktex.enabled": true,
@@ -2599,7 +2606,7 @@
         },
         {
             "before": [
-                "m", "v"
+                "m", "j"
             ],
             "after": [],
             "commands": [
