@@ -1290,7 +1290,7 @@
 		"prefix": "up",
 		"scope": "markdown, latex",
 		"body": [
-			"^{$1}$0",
+			"{$1}^{$2}$0",
 		],
 		"description": "superscript"
 	},
@@ -1299,7 +1299,7 @@
 		"prefix": "dd",
 		"scope": "markdown, latex",
 		"body": [
-			"_{$1}$0",
+			"{$1}_{$2}$0",
 		],
 		"description": "subscript"
 	},
@@ -1401,6 +1401,51 @@
 			"\\left\\Vert $1 \\right\\Vert $0",
 		],
 		"description": "norm of an object"
+	},
+
+	"inline bullet 1": {
+		"prefix": "i1",
+		"scope": "markdown, latex",
+		"body": [
+			"(i.) $0",
+		],
+		"description": "first bullet in para"
+	},
+
+	"inline bullet 2": {
+		"prefix": "i2",
+		"scope": "markdown, latex",
+		"body": [
+			"(ii.) $0",
+		],
+		"description": "second bullet in para"
+	},
+
+	"inline bullet 3": {
+		"prefix": "i3",
+		"scope": "markdown, latex",
+		"body": [
+			"(iii.) $0",
+		],
+		"description": "third bullet in para"
+	},
+
+	"inline bullet 4": {
+		"prefix": "i4",
+		"scope": "markdown, latex",
+		"body": [
+			"(iv.) $0",
+		],
+		"description": "fourth bullet in para"
+	},
+
+	"inline bullet 5": {
+		"prefix": "i5",
+		"scope": "markdown, latex",
+		"body": [
+			"(v.) $0",
+		],
+		"description": "fifth bullet in para"
 	},
 
 }

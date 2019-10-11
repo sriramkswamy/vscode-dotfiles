@@ -394,6 +394,14 @@
 		"description": "hspace"
 	},
 
+	"inline math": {
+		"prefix": "im",
+		"body": [
+			"\\( $1 \\)$0"
+		],
+		"description": "inline math"
+	},
+
 	"new line math": {
 		"prefix": "ma",
 		"body": [
