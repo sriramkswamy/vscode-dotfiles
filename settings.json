@@ -1418,6 +1418,17 @@
         // folding
         {
             "before": [
+                "tab"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.toggleFold"
+                }
+            ]
+        },
+        {
+            "before": [
                 "z","f"
             ],
             "after": [],
@@ -2661,6 +2672,17 @@
         },
 
         // folding
+        {
+            "before": [
+                "tab"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.toggleFold"
+                }
+            ]
+        },
         {
             "before": [
                 "z","f"
