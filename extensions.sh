@@ -6,7 +6,6 @@ code --install-extension redhat.vscode-yaml
 code --install-extension naumovs.color-highlight
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension Gruntfuggly.todo-tree
-code --install-extension akamud.vscode-theme-onedark
 code --install-extension mkloubert.vscode-remote-workspace
 code --install-extension vsmobile.vscode-react-native
 code --install-extension DougFinke.vscode-pandoc
@@ -22,7 +21,6 @@ code --install-extension PeterJausovec.vscode-docker
 code --install-extension bajdzis.vscode-database
 code --install-extension deerawan.vscode-dash
 code --install-extension vsciot-vscode.vscode-arduino
-code --install-extension Equinusocio.vsc-material-theme
 code --install-extension fallenwood.vimL
 code --install-extension vscodevim.vim
 code --install-extension octref.vetur
@@ -45,7 +43,6 @@ code --install-extension ms-mssql.mssql
 code --install-extension ms-vscode.mono-debug
 code --install-extension metaseed.metago
 code --install-extension Gimly81.matlab
-code --install-extension zhuangtongfa.Material-theme
 code --install-extension PKief.material-icon-theme
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension James-Yu.latex-workshop

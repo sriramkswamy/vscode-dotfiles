@@ -6,7 +6,6 @@ code-insiders --install-extension redhat.vscode-yaml
 code-insiders --install-extension naumovs.color-highlight
 code-insiders --install-extension wayou.vscode-todo-highlight
 code-insiders --install-extension Gruntfuggly.todo-tree
-code-insiders --install-extension akamud.vscode-theme-onedark
 code-insiders --install-extension mkloubert.vscode-remote-workspace
 code-insiders --install-extension vsmobile.vscode-react-native
 code-insiders --install-extension DougFinke.vscode-pandoc
@@ -22,7 +21,6 @@ code-insiders --install-extension PeterJausovec.vscode-docker
 code-insiders --install-extension bajdzis.vscode-database
 code-insiders --install-extension deerawan.vscode-dash
 code-insiders --install-extension vsciot-vscode.vscode-arduino
-code-insiders --install-extension Equinusocio.vsc-material-theme
 code-insiders --install-extension fallenwood.vimL
 code-insiders --install-extension vscodevim.vim
 code-insiders --install-extension octref.vetur
@@ -45,7 +43,6 @@ code-insiders --install-extension ms-mssql.mssql
 code-insiders --install-extension ms-vscode.mono-debug
 code-insiders --install-extension metaseed.metago
 code-insiders --install-extension Gimly81.matlab
-code-insiders --install-extension zhuangtongfa.Material-theme
 code-insiders --install-extension PKief.material-icon-theme
 code-insiders --install-extension yzhang.markdown-all-in-one
 code-insiders --install-extension James-Yu.latex-workshop

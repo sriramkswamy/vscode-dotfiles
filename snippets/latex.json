@@ -935,6 +935,14 @@
 	"description": "theorem"
 },
 
+"placeholder": {
+	"prefix": "plh",
+	"body": [
+		"\\textbf{Placeholder:} $0"
+	],
+	"description": "placeholder text in pdf files"
+},
+
 // Beamer
 
 "beamer slide": {

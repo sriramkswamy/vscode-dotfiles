@@ -6,7 +6,6 @@ code --install-extension redhat.vscode-yaml --force
 code --install-extension naumovs.color-highlight --force
 code --install-extension wayou.vscode-todo-highlight --force
 code --install-extension Gruntfuggly.todo-tree --force
-code --install-extension akamud.vscode-theme-onedark --force
 code --install-extension mkloubert.vscode-remote-workspace --force
 code --install-extension vsmobile.vscode-react-native --force
 code --install-extension DougFinke.vscode-pandoc --force
@@ -22,7 +21,6 @@ code --install-extension PeterJausovec.vscode-docker --force
 code --install-extension bajdzis.vscode-database --force
 code --install-extension deerawan.vscode-dash --force
 code --install-extension vsciot-vscode.vscode-arduino --force
-code --install-extension Equinusocio.vsc-material-theme --force
 code --install-extension fallenwood.vimL --force
 code --install-extension vscodevim.vim --force
 code --install-extension octref.vetur --force
@@ -45,7 +43,6 @@ code --install-extension ms-mssql.mssql --force
 code --install-extension ms-vscode.mono-debug --force
 code --install-extension metaseed.metago --force
 code --install-extension Gimly81.matlab --force
-code --install-extension zhuangtongfa.Material-theme --force
 code --install-extension PKief.material-icon-theme --force
 code --install-extension yzhang.markdown-all-in-one --force
 code --install-extension James-Yu.latex-workshop --force
