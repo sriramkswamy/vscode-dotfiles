@@ -39,9 +39,6 @@
     // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
     "window.menuBarVisibility": "toggle",
 
-    // theme
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-
     // Controls how the editor should render whitespace characters, possibilities
     // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
     // single spaces between words.
@@ -326,27 +323,27 @@
     "latex-workshop.latex.autoBuild.run": "never" ,
     "latex-workshop.view.pdf.tab.useNewGroup": true,
 
-    // // internal viewer
-    // "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
-    // "latex-workshop.view.pdf.viewer": "tab",
+    // internal viewer
+    "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+    "latex-workshop.view.pdf.viewer": "tab",
 
     // internal viewer color
-    // "latex-workshop.view.pdf.invert": 0,
-    "latex-workshop.view.pdf.invert": 0.85,
+    "latex-workshop.view.pdf.invert": 0,
+    // "latex-workshop.view.pdf.invert": 0.85,
 
-    // external viewer
-    "latex-workshop.view.pdf.viewer": "external",
-    "latex-workshop.view.pdf.ref.viewer": "external",
-    "latex-workshop.view.pdf.external.viewer.command": "evince2",
-    "latex-workshop.view.pdf.external.viewer.args": [
-        "%PDF%"
-    ],
-    "latex-workshop.view.pdf.external.synctex.command": "evince_forward_search",
-    "latex-workshop.view.pdf.external.synctex.args": [
-        "%PDF%",
-        "%LINE%",
-        "%TEX%"
-    ],
+    // // external viewer
+    // "latex-workshop.view.pdf.viewer": "external",
+    // "latex-workshop.view.pdf.ref.viewer": "external",
+    // "latex-workshop.view.pdf.external.viewer.command": "evince2",
+    // "latex-workshop.view.pdf.external.viewer.args": [
+    //     "%PDF%"
+    // ],
+    // "latex-workshop.view.pdf.external.synctex.command": "evince_forward_search",
+    // "latex-workshop.view.pdf.external.synctex.args": [
+    //     "%PDF%",
+    //     "%LINE%",
+    //     "%TEX%"
+    // ],
 
     // Files to clean.
     // This property must be an array of strings. File globs such as *.removeme, something?.aux can be used.
@@ -392,8 +389,8 @@
     /* MATLAB */
 
     // The path to the MATLAB and mlint executable
-    "matlab.matlabpath": "/home/sriramkrish92/MATLAB/bin/matlab",
-    "matlab.mlintpath": "/home/sriramkrish92/MATLAB/bin/glnxa64/mlint",
+    "matlab.matlabpath": "/home/sriramkrish92/MATLAB/R2019a/bin/matlab",
+    "matlab.mlintpath": "/home/sriramkrish92/MATLAB/R2019a/bin/glnxa64/mlint",
 
     /* Files */
 
@@ -401,7 +398,8 @@
     "files.trimTrailingWhitespace": true,
     "files.associations": {
         "*.m": "matlab",
-        "*.el": "lisp"
+        "*.el": "lisp",
+        "*.txt": "markdown"
     },
 
     /*     Python */
@@ -709,7 +707,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.compareEditor.previousChange"
+                    "command": "workbench.action.editor.nextChange"
                 }
             ]
         },
@@ -720,7 +718,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.compareEditor.nextChange"
+                    "command": "workbench.action.editor.previousChange"
                 }
             ]
         },
@@ -1334,6 +1332,16 @@
                     "command": "editor.action.addSelectionToPreviousFindMatch"
                 }
             ]
+        },
+
+        // duplicate current line/region
+        {
+            "before": [
+                "g","."
+            ],
+            "after": [
+                "y", "y", "p"
+            ],
         },
 
         // latex bindings
@@ -2592,6 +2600,16 @@
             ]
         },
 
+        // duplicate current line/region
+        {
+            "before": [
+                "g","."
+            ],
+            "after": [
+                "y", "p"
+            ],
+        },
+
         // latex bindings
         {
             "before": [
@@ -3292,6 +3310,17 @@
 
     "macros": {
 
+        // navigation
+
+        // open the previous file
+        "openPreviousEditor": [
+            "workbench.action.quickOpenPreviousEditor",
+            // "workbench.action.openNextRecentlyUsedEditorInGroup",
+            // "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+            // "workbench.action.acceptSelectedQuickOpenItem",
+            "acceptSelectedSuggestion"
+        ],
+
         // git
 
         // open the current file
@@ -3303,6 +3332,10 @@
             },
             "workbench.action.terminal.runActiveFile",
         ],
+
+        // R //
+        // r.runSouce, r.runSelection, r.nrow, r.length, r.head, r.thead, r.names,
+        // r.knitRmd, r.runSourcewithEcho
 
         // matlab //
 
@@ -3693,4 +3726,6 @@
     "leetcode.hint.commandShortcut": false,
     "leetcode.hint.configWebviewMarkdown": false,
     "sync.forceUpload": true,
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|%|%%|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "workbench.colorTheme": "Default Light+",
 }
